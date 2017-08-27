@@ -11,11 +11,15 @@ $(document).foundation();
 //
 // Custom JS
 // --------------------------------------------------
-var options = {
-	particleColor: '#fff',
-	background: 'http://parsfibernet.com/zero.png',
-	interactive: true,
-	speed: 'fast',
-	density: 'medium'
-};
-var particleCanvas = new ParticleNetwork(document.getElementById('particle-canvas'), options);
+$(window).bind("load", function () {
+    var footer = $("footer");
+    var pos = footer.position();
+    var height = $(window).height();
+    height = height - pos.top;
+    height = height - footer.height();
+    if (height > 0) {
+        footer.css({
+            'margin-top': height + 'px'
+        });
+    }
+});

@@ -1,17 +1,8 @@
-- link: درباره ما
+- link: درباره
   url: /about
 
-- link: خدمات
-  url: /services
+- link: قوانین
+  url: /terms
 
-- link: تماس با ما
-  url: /contact-us
-
-# - link: بلاگ
-#   url: /blog
-
-- link: استخدام
-  url: https://jobinja.ir/companies/fibernet/jobs
-
-- link: خدمات اینترنتی
-  url: http://fibernet.ir
+- link: ارسال پیام
+  url: /contact

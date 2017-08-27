@@ -8,19 +8,15 @@ $paragraph-lineheight: 2;
 $header-font-weight: bold;
 $header-styles: (
   'small': (
-    'h1': ('font-size': 24),
-    'h2': ('font-size': 16),
-    'h3': ('font-size': 12),
-    'h4': ('font-size': 10),
-    'h5': ('font-size': 17),
-    'h6': ('font-size': 16)
+    'h1': ('font-size': 20),
+    'h2': ('font-size': 18)
   ),
   'medium': (
-    'h1': ('font-size': 48),
-    'h2': ('font-size': 32),
-    'h3': ('font-size': 24),
-    'h4': ('font-size': 20),
-    'h5': ('font-size': 20),
-    'h6': ('font-size': 16)
+    'h1': ('font-size': 32),
+    'h2': ('font-size': 30)
+  ),
+  'large': (
+    'h1': ('font-size': 32),
+    'h2': ('font-size': 30)
   )
 );

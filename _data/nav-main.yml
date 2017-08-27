@@ -1,8 +1,5 @@
-- link: صفحه اصلی
-  url: /
+- link: خبرها
+  url: /news
 
-- link: خدمات
-  url: /services
-
-- link: درباره ما
-  url: /about
+- link: آموزش
+  url: /tutorial
