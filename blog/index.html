@@ -3,11 +3,12 @@ layout: page
 sitemap: false
 ---
 <div class="blog-container">
-    <div class="row medium-8 large-7 columns">
+    <div class="row medium-12 columns">
         {% for post in paginator.posts %}
         <div class="blog-post">
             <a href="{{ post.url }}"><h3>{{ post.title }} <small>{{ post.date | date: '%d.%m.%Y' }}</small></h3></a>
             <p>{{ post.excerpt }}</p>
+            
         </div>
         {% endfor %}
     </div>

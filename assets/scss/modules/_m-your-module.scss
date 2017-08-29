@@ -39,6 +39,18 @@ hr.dotted {
   margin: 4em auto;
 }
 // --------------------------------------------------
+// Lead paragraf
+// --------------------------------------------------
+.lead{
+  @media screen and (max-width: 39.9375em) {
+    font-size: 17px;
+  }
+  @media screen and (min-width: 40em) {
+    font-size: 20px;
+  }  
+}
+
+// --------------------------------------------------
 // Footer Navigation
 // --------------------------------------------------
 footer.callout {
@@ -49,7 +61,6 @@ footer.callout {
   border-top: 1px solid lighten($black, 90%) !important;
   margin-bottom: 0;
   padding: 2rem 2rem 2rem 2rem !important;
-  max-height: 6rem;
 
   a {
     color: $white;
@@ -63,11 +74,11 @@ footer.callout {
   }
 }
 span {
-  margin-bottom: 2em;
+  padding: 0.5rem 1rem;
   font-size: 0.9em;
+  float: left;
 }
 .footer {
-  margin-bottom: 2em;
   li:first-of-type a{
     padding-right: 0;
   }

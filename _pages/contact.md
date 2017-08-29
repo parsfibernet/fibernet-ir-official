@@ -1,5 +1,5 @@
 ---
-permalink: /contact-us/
+permalink: /contact/
 layout: default
 title: تماس با ما
 subTitle: می‌توانید از فرم زیر برای ارتباط با ما استفاده
