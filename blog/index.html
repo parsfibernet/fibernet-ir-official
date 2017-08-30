@@ -1,14 +1,18 @@
 ---
-layout: page
+layout: compress
 sitemap: false
 ---
+{% include header.html %}
 <div class="blog-container">
-    <div class="row medium-12 columns">
+    <div class="row column">
         {% for post in paginator.posts %}
-        <div class="blog-post">
-            <a href="{{ post.url }}"><h3>{{ post.title }} <small>{{ post.date | date: '%d.%m.%Y' }}</small></h3></a>
-            <p>{{ post.excerpt }}</p>
-            
+        <div class="card">
+            <div class="card-section">
+                <h2>{{ post.title }}</h2>
+                <small>{{ post.date | date: '%d.%m.%Y' }}</small>
+                <p>{{ post.excerpt }}</p>
+                <a href="{{ post.url }}">ادامه مطلب ...</a>
+            </div>
         </div>
         {% endfor %}
     </div>
@@ -44,3 +48,4 @@ sitemap: false
     </div>
     {% endif %}
 </div>
+{% include footer.html %}

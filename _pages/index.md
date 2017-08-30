@@ -1,6 +1,6 @@
 ---
 permalink: /
-layout: default
+layout: index
 isHome: true
 ---
 <div class="row main-content">

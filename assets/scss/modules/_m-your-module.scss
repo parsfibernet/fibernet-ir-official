@@ -50,6 +50,15 @@ hr.dotted {
   }  
 }
 
+
+.card-section {
+  @media screen and (max-width: 39.9375em) {
+    padding: 3.125rem 1rem;
+  }
+  @media screen and (min-width: 40em) {
+    padding: 3.125rem 6.688rem;
+  }  
+}
 // --------------------------------------------------
 // Footer Navigation
 // --------------------------------------------------

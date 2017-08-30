@@ -1,6 +1,14 @@
 ---
-layout: default
+layout: compress
 ---
-<div class="row column">
-{{ content }}
+{% include header.html %}
+<div class="row column" style="margin-top: 3rem">
+    <div class="card">
+        <div class="card-section">
+            <h2>{{ page.title }}</h2>
+            {{ content }}
+        </div>
+    </div>
 </div>
+{% include footer.html %}
+
