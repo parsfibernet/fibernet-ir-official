@@ -30,7 +30,7 @@ exclude:
   - "rev-manifest.json"
 
 # Plugins
-plugins:             ["jekyll-sitemap", "jekyll-paginate"]
+plugins:             ["jekyll-sitemap", "jekyll-paginate", "jekyll-jalali"]
 
 # Conversion
 incremental:      true
