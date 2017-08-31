@@ -1,0 +1,19 @@
+---
+layout: compress
+---
+{% include header.html %}
+<div class="blog-container">
+    <div class="row column">
+        {% for post in site.tutorial %}
+        <div class="card">
+            <div class="card-section">
+                <h2>{{ post.title }}</h2>
+                <small>{{ post.date | jdate: "%A %d %b %Y"}}</small>
+                <p>{{ post.excerpt }}</p>
+                <a href="{{ post.url }}">ادامه مطلب ...</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% include footer.html %}

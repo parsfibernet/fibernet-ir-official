@@ -30,7 +30,11 @@ exclude:
   - "rev-manifest.json"
 
 # Plugins
-plugins:             ["jekyll-sitemap", "jekyll-paginate", "jekyll-jalali"]
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-jalali
+  - jekyll-archives
 
 # Conversion
 incremental:      true
@@ -40,10 +44,24 @@ incremental:      true
 # baseurl:        "" # does not include hostname
 
 # Outputting
-permalink:        "/blog/:year/:title/"
+permalink:        "/blog/:title/"
 paginate_path:    "/blog/page:num"
 paginate:         5
 
 compress_html:
   ignore:
     envs: [development]
+
+# archive configuration
+jekyll-archives:
+  enabled:
+  - tags
+  layout: 'archive'
+  permalinks:
+    tag: "/blog/tag/:name/"
+
+collections:
+  tutorial:
+    output: true
+    permalink: "/:collection/:title/"
+
