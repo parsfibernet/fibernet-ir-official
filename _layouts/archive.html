@@ -5,7 +5,8 @@ sitemap: true
 {% include header.html %}
 <div class="blog-container">
     <div class="row column">
-        {% for post in paginator.posts %}
+        <h1>آرشیو برای برچسب « {{ page.title }} »</h1>
+        {% for post in page.posts %}
         <div class="card">
             <div class="card-section">
                 <h2>{{ post.title }}</h2>
@@ -16,35 +17,5 @@ sitemap: true
         </div>
         {% endfor %}
     </div>
-    <!-- Pagination links -->
-    {% if paginator.total_pages > 1 %}
-    <div class="row medium-6 columns text-center">
-        <nav>
-            <ul class="pagination pagination-circular" role="navigation" aria-label="Pagination">
-                {% if paginator.previous_page %}
-                    <li><a href="{{ paginator.previous_page_path | replace: '/index.html', '' }}" aria-label="Previous page">« <span class="show-for-sr">Previous page</span></a></li>
-                {% else %}
-                    <li class="disabled">« <span class="show-for-sr">Previous page</span></li>
-                {% endif %}
-
-                {% for page in (1..paginator.total_pages) %}
-                    {% if page == paginator.page %}
-                        <li class="current"><span class="show-for-sr">You're on page</span> {{ page }}</li>
-                    {% elsif page == 1 %}
-                        <li><a href="{{ paginator.previous_page_path | replace: '/index.html', '' }}" aria-label="Page {{ page }}">{{ page }}</a></li>
-                    {% else %}
-                        <li><a href="{{ site.paginate_path | replace: ':num', page }}" aria-label="Page {{ page }}">{{ page }}</a></li>
-                    {% endif %}
-                {% endfor %}
-
-                {% if paginator.next_page %}
-                    <li><a href="{{ paginator.next_page_path }}" aria-label="Next page">» <span class="show-for-sr">Next page</span></a></li>
-                {% else %}
-                    <li class="disabled">» <span class="show-for-sr">Next page</span></a></li>
-                {% endif %}
-            </ul>
-        </nav>
-    </div>
-    {% endif %}
 </div>
 {% include footer.html %}
