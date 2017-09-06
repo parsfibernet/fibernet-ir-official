@@ -81,7 +81,6 @@ javascript:
     - "node_modules/foundation-sites/dist/js/plugins/foundation.tabs.js"
     - "node_modules/foundation-sites/dist/js/plugins/foundation.tooltip.js"
     - "node_modules/foundation-sites/dist/js/plugins/foundation.zf.responsiveAccordionTabs.js"
-    - "node_modules/canvas-particle-network/particle-network.min.js"
 
     # Paths to your own project code are here
     # All the files in this list and in the js dir are concatenated into all.js
