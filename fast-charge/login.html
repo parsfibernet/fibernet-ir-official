@@ -1,0 +1,21 @@
+<div class="card-section">
+    <h2>ورود به پنل شارژ اینترنت</h2>
+    <p>برای تمدید یا تغییر سرویس و نیز خرید حجم، شماره تلفن دارای سرویس ADSL و شماره موبایل خود را وارد کنید.</p> 
+    <form name="loginForm">
+        <div class="row">
+            <div class="medium-12 columns">
+                <label>
+                    <input ng-model="phone" type="text" required minlength="10" maxlength="10" ng-pattern="/^(17|11|83)?\d{8}$/" placeholder="شماره تلفن">
+                </label>
+            </div>
+            <div class="medium-12 columns">
+                <label>
+                    <input ng-model="mobile" type="text" required minlength="11" maxlength="11" ng-pattern="/^09(1|2|3|9)\d{8}$/" placeholder="شماره موبایل">
+                </label>
+            </div>
+            <div class="medium-12 columns text-center">
+                <button ng-click="fetchAllAvailableProducts(phone, mobile)" type="button" class="success button" ng-disabled="loginForm.$invalid" >تائید</button>
+            </div>
+        </div>
+    </form>                  
+</div>

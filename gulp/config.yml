@@ -81,6 +81,9 @@ javascript:
     - "node_modules/foundation-sites/dist/js/plugins/foundation.tabs.js"
     - "node_modules/foundation-sites/dist/js/plugins/foundation.tooltip.js"
     - "node_modules/foundation-sites/dist/js/plugins/foundation.zf.responsiveAccordionTabs.js"
+    - "node_modules/angular/angular.js"
+    - "node_modules/angular-route/angular-route.js"
+    - "node_modules/angular-loading-bar/src/loading-bar.js"
 
     # Paths to your own project code are here
     # All the files in this list and in the js dir are concatenated into all.js
@@ -109,6 +112,6 @@ watch:
   sass: "assets/scss/**/*.scss"
   pages:
     - "*.{md,html,yml,xml}"
-    - "{_data,_includes,_layouts,_pages,_posts}/**/*.{md,html,yml,xml}"
+    - "{_data,_includes,_layouts,_pages,_posts,blog,fast-charge,_tutorial}/**/*.{md,html,yml,xml}"
     - "!_site/**/*.*"
     - "!assets/**/*.*"
