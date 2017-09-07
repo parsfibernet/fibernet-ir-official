@@ -13,8 +13,14 @@
                     <input ng-model="mobile" type="text" required minlength="11" maxlength="11" ng-pattern="/^09(1|2|3|9)\d{8}$/" placeholder="شماره موبایل">
                 </label>
             </div>
+            <div class="medium-12 columns" ng-show="showError" >
+                <div class="callout alert">
+                    <h5>متاسفانه مشکلی وجود دارد.</h5>
+                    <p ng-bind="result.message"></p>
+                </div>
+            </div>
             <div class="medium-12 columns text-center">
-                <button ng-click="fetchAllAvailableProducts(phone, mobile)" type="button" class="success button" ng-disabled="loginForm.$invalid" >تائید</button>
+                <button ng-click="fetchAllAvailableProducts(phone, mobile)" type="button" class="success button" ng-disabled="loginForm.$invalid || disBtn" >تائید</button>
             </div>
         </div>
     </form>                  

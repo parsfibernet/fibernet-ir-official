@@ -3,6 +3,6 @@ layout: compress
 ---
 {% include header.html %}
 <div class="row" style="margin-top: 3rem" ng-app="fast-charge">
-    <div class="card small-12 medium-5 medium-centered columns" ng-view ></div>
+    <div ng-controller="mainCtrl" class="card small-12 medium-5 medium-centered columns" ng-view ></div>
 </div>
 {% include footer.html %}

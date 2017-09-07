@@ -1,4 +1,11 @@
 <div class="card-section">
-    <h2>مرحله ۲</h2>
-    <p>برای تمدید یا تغییر سرویس و نیز خرید حجم، شماره تلفن دارای سرویس ADSL و شماره موبایل خود را وارد کنید.</p>                  
+    <h2>اطلاعات حساب اینترنت</h2>
+    <p>شماره شما: <strong ng-bind="result.products.account.adsltel"></strong></p>
+    <p>حجم باقی مانده: <strong ng-bind="result.products.account.remaincredit | number"></strong> مگابایت</p>
+    <p>زمان باقی مانده: <strong ng-bind="result.products.account.remaindays"></strong> روز</p>
+    <p ng-bind="result.products.account.servicename" ></p>
+    <p class="clearfix">
+        <button ng-click="getAct()" class="clear button success float-right">تمدید یا تغییر سرویس</button>
+        <button class="clear button success float-left">خرید حجم</button>
+    </p>
 </div>
