@@ -3,6 +3,9 @@ hr.dotted {
     margin: 3rem 0 3rem 0;
     max-width: 100%;
 }
+.close-button, .close-button.medium {
+  left: 1rem;
+}
 .blog-container{
   margin: 2em auto;
 }
@@ -244,6 +247,39 @@ $topbar-responsive-animation-type: fade-in; // or use slide-down or none
       animation: fadeIn 1s ease-in;
     } @else {
       animation: none;
+    }
+  }
+}
+//
+// Services Callouts
+// --------------------------------------------------
+.services-callouts{
+  .container-hover:hover {
+    background: #f8f8f8;
+    transition: background .25s ease-in-out;
+  }
+  .container-hover {
+    position: relative;
+    background: $white;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: background .25s ease-in-out;
+    @media screen and (max-width: 39.9375em) {
+
+    }
+    @media screen and (min-width: 40em) {
+      min-height: 25rem;
+    }
+    .link {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      border-top: 1px solid #ccc;
+      padding: 0.3rem 1rem 0.3rem 1rem;
+      margin: 0 !important;
+    }
+    .container{
+      padding: 1rem !important;
     }
   }
 }

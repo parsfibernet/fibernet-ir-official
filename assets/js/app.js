@@ -7,7 +7,7 @@
 // Initialize Foundation
 // --------------------------------------------------
 
-$(document).foundation();
+// $(document).foundation();
 
 //
 // Custom JS
@@ -35,10 +35,13 @@ var app = angular.module('fast-charge', ['ngRoute', 'angular-loading-bar']);
 app.config(function($routeProvider) {
     $routeProvider
     .when("/", {
-      templateUrl : 'login.html'
+      templateUrl : '../partials/login.html'
     })
     .when("/step-2", {
-      templateUrl : "step-2.html"
+      templateUrl : "../partials/step-2.html"
+    })
+    .when("/volume", {
+      templateUrl : "../partials/volume.html"
     });
   });
 // Bind Access Token
@@ -54,26 +57,60 @@ app.factory('httpRequestInterceptor',function () {
 app.config(function ($httpProvider) {
     $httpProvider.interceptors.push('httpRequestInterceptor');
 })
+
 // Main Controller
 // ---------------
 app.controller('mainCtrl', ($scope, $http, $location, $rootScope) => {
-    console.log('init manCtrl');
+    $(document).foundation();
+    console.log('MainCtrl init');
     $rootScope.$on('cfpLoadingBar:started', () => {
-        console.log('start');
         $scope.disBtn = true;
     });
     $rootScope.$on('cfpLoadingBar:loaded', () => {
-        console.log('finish');
         $scope.disBtn = false;
     });
     function getProducts(cid, pid, type, phone) {
         let url = `https://core.fibernet.ir/2.0/web/products/city/${cid}/provider/${pid}/types/${type}?phone=${phone}`;
         return $http.get(url);
     }
-    $scope.getAct = () => {
-        console.log('Act initial : ', $scope);
+    $scope.createOrder = (pid) => {
+        var popup = new Foundation.Reveal($('#recipe'));
+        popup.open();
+        $scope.pid = pid;
+        console.log('phone : ', $scope.phone);
+        console.log('mobile : ', $scope.mobile);
+        console.log('pid : ', $scope.pid);
+        let url = 'https://core.fibernet.ir/2.0/web/orders/withGateway';
+        let data = {};
+        data.mobile = $scope.mobile;
+        data.rows = [
+            {
+                "id" : $scope.pid,
+                "qty": 1,
+                "params": {"land_line": $scope.phone}
+            }
+        ]
+        $http.post(url, data).then(
+            (response) => {
+                $scope.order = response.data;
+                console.log($scope.order);
+            },
+            (error) => {
+                $scope.order = error.data;
+                console.log($scope.order);
+            }
+        );
+    }
+    $scope.initVolume = () => {
+        console.log('initVolume');
+        $location.path('volume');
+    }
+    $scope.clickTest = () => {
+        console.log('clickTest');
     }
     $scope.fetchAllAvailableProducts = (phone, mobile) => {
+        $scope.phone = phone;
+        $scope.mobile = mobile;
         var code = phone.toString().substring(0,2);
         switch (code) {
             case '11':
@@ -98,8 +135,16 @@ app.controller('mainCtrl', ($scope, $http, $location, $rootScope) => {
             (error) => {
                 $scope.showError = true;
                 $scope.result = error.data;
-                console.log($scope.result);
             }
         );
     }
+    $scope.traffics = [
+        {id: 1482, price: 12003, title: "10 کیلوبیت", vol: 1, scale: "گیگابایت", description: "4 گیگ ترافیک عمومی پیش پرداخت (به مبلغ نهایی 5000 ﷼ کارمزد تراکنش بانکی افزوده می‌شود)" },
+        {id: 1482, price: 12003, title: "حجک ۳۰ کیلوبیت", vol: 1, scale: "گیگابایت", description: "5گیگ ترافیک- طرح همسفر (باتاریخ مصرف نامحدود و انتقال مانده به سرویس بعدی و قابلیت خرید هم زمان چند بسته، فقط با 12000تومان) (به مبلغ نهایی 5000 ﷼ کارمزد تراکنش بانکی افزوده می‌شود)" },
+        {id: 1482, price: 12003, title: "جحم ۲۰ کیلوبیت", vol: 1, scale: "گیگابایت", description: "4 گیگ ترافیک عمومی پیش پرداخت (به مبلغ نهایی 5000 ﷼ کارمزد تراکنش بانکی افزوده می‌شود)" },
+        {id: 1482, price: 12003, title: "کیلوبیت", vol: 1, scale: "گیگابایت", description: "4 گیگ ترافیک عمومی پیش پرداخت (به مبلغ نهایی 5000 ﷼ کارمزد تراکنش بانکی افزوده می‌شود)" },
+        {id: 1482, price: 12003, title: "بق ۳۰ کیلوبیت", vol: 1, scale: "گیگابایت", description: "بسته ترافیکی کوتاه مدت (فوتون) - 5گیگ ترافیک با زمان مصرف30روزه 10000 تومان -(با داشتن زمان کافی از سرویسADSL) (به مبلغ نهایی 5000 ﷼ کارمزد تراکنش بانکی افزوده می‌شود)" },
+        {id: 1482, price: 12003, title: "کیلوبیت", vol: 1, scale: "گیگابایت", description: "4 گیگ ترافیک عمومی پیش پرداخت (به مبلغ نهایی 5000 ﷼ کارمزد تراکنش بانکی افزوده می‌شود)" },
+        {id: 1482, price: 12003, title: "کیلوبیت", vol: 1, scale: "گیگابایت", description: "4 گیگ ترافیک عمومی پیش پرداخت (به مبلغ نهایی 5000 ﷼ کارمزد تراکنش بانکی افزوده می‌شود)" }
+    ]
 });
