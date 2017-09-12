@@ -25,6 +25,12 @@ copy:
   dist: "_site/assets/"
   notification: "Running Copy"
 
+partials:
+  assets:
+    - "fast-charge/partials/**/*"
+  dist: "_site/partials/"
+  notification: "Running Partials"
+
 javascript:
   dest:
     jekyllRoot: "assets/js/"
@@ -81,6 +87,8 @@ javascript:
     - "node_modules/foundation-sites/dist/js/plugins/foundation.tabs.js"
     - "node_modules/foundation-sites/dist/js/plugins/foundation.tooltip.js"
     - "node_modules/foundation-sites/dist/js/plugins/foundation.zf.responsiveAccordionTabs.js"
+
+    # AngularJS
     - "node_modules/angular/angular.js"
     - "node_modules/angular-route/angular-route.js"
     - "node_modules/angular-loading-bar/src/loading-bar.js"

@@ -13,6 +13,7 @@ include:
 
 exclude:
   - "/assets/"
+  - "/fast-charge/partials/"
   - "bower.json"
   - "composer.json"
   - "composer.lock"

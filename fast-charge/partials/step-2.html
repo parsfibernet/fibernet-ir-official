@@ -1,0 +1,15 @@
+<div  class="card small-12 medium-5 medium-centered columns">
+    <div class="card-section">
+        <h2>اطلاعات حساب اینترنت</h2>
+        <p>شماره شما: <strong ng-bind="result.products.account.adsltel"></strong></p>
+        <p>حجم باقی مانده: <strong ng-bind="result.products.account.remaincredit | number"></strong> مگابایت</p>
+        <p>زمان باقی مانده: <strong ng-bind="result.products.account.remaindays"></strong> روز</p>
+        <p ng-bind="result.products.account.servicename" ></p>
+        <div class="row">
+            <div class="medium-12 columns">
+                <button ng-click="initVolume()" class="hollow button success">تمدید یا تغییر سرویس</button>
+                <button ng-click="initVolume()" class="hollow button success">خرید حجم</button>
+            </div>
+        </div>
+    </div>
+</div>

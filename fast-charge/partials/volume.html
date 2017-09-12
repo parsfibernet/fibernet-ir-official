@@ -1,0 +1,43 @@
+<div  class="medium-12 columns">
+    <h2>خرید حجم</h2>
+    <h3 class="subheader">حجم (ترافیک) مورد نظر را انتخاب کنید.</h3>
+    <div class="row small-up-1 medium-up-3">
+        <div class="column services-callouts" ng-repeat="product in result.products.traffics">
+            <div class="container-hover" ng-click="createOrder(product.products[0].id)" >
+                <div class="container">
+                    <h4 ng-bind="product.title"></h4>
+                    <p ng-bind="product.description"></p>
+                </div>
+                <p class="link"><strong ng-bind="product.price | currency : '' : 0" ></strong> ریال</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="reveal" id="recipe" data-reveal>
+    <div ng-show="disBtn">
+        <p>لطفا شکیبا باشید...</p>
+    </div>
+    <div ng-hide="disBtn">
+        <h2>صورت‌حساب شماره <strong ng-bind="order.id"></strong></h2>
+        <ul class="vertical menu">
+            <li>قیمت محصول: <strong ng-bind="order.total_amount | currency : '' : 0"></strong> ریال</li>
+            <li>مالیات: <strong ng-bind="order.tax | currency : '' : 0"></strong> ریال</li>
+            <li>کارمزد: <strong ng-bind="order.processing_fee | currency : '' : 0"></strong> ریال</li>
+        </ul>
+        <h3>مبلغ قابل پرداخت: <strong ng-bind="order.payable_amount | currency : '' : 0"></strong></h3>
+        <form method="post" action="https://sep.shaparak.ir/Payment.aspx">
+            <input id="agreement" type="checkbox" ng-model="agreement" ><label for="agreement">موافقت‌نامه استفاده از خدمات و قوانین را خوانده و پذیرفته‌ام.</label>                    
+            <input type="hidden" aria-label="amount" value="{{order.gateway.data.Amount}}" name="Amount">
+            <input type="hidden" aria-label="mid" value="{{order.gateway.data.MID}}" name="MID">
+            <input type="hidden" aria-label="redirect" value="{{order.gateway.data.RedirectURL}}" name="RedirectURL">
+            <input type="hidden" aria-label="resnum" value="{{order.gateway.data.ResNum}}" name="ResNum">
+            <div class="text-center">
+                <input type="submit" class="alert button" ng-disabled="disBtn || !agreement" value="پرداخت با کارت شتاب" >
+            </div>
+        </form>
+    </div>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+      
