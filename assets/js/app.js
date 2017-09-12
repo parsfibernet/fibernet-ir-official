@@ -37,8 +37,8 @@ app.config(function($routeProvider) {
     .when("/", {
       templateUrl : '../partials/login.html'
     })
-    .when("/step-2", {
-      templateUrl : "../partials/step-2.html"
+    .when("/status", {
+      templateUrl : "../partials/status.html"
     })
     .when("/volume", {
       templateUrl : "../partials/volume.html"
@@ -130,7 +130,7 @@ app.controller('mainCtrl', ($scope, $http, $location, $rootScope) => {
             (response) => {
                 $scope.result = response.data;
                 console.log($scope.result);
-                $location.path('step-2');
+                $location.path('status');
             },
             (error) => {
                 $scope.showError = true;
@@ -138,13 +138,4 @@ app.controller('mainCtrl', ($scope, $http, $location, $rootScope) => {
             }
         );
     }
-    $scope.traffics = [
-        {id: 1482, price: 12003, title: "10 کیلوبیت", vol: 1, scale: "گیگابایت", description: "4 گیگ ترافیک عمومی پیش پرداخت (به مبلغ نهایی 5000 ﷼ کارمزد تراکنش بانکی افزوده می‌شود)" },
-        {id: 1482, price: 12003, title: "حجک ۳۰ کیلوبیت", vol: 1, scale: "گیگابایت", description: "5گیگ ترافیک- طرح همسفر (باتاریخ مصرف نامحدود و انتقال مانده به سرویس بعدی و قابلیت خرید هم زمان چند بسته، فقط با 12000تومان) (به مبلغ نهایی 5000 ﷼ کارمزد تراکنش بانکی افزوده می‌شود)" },
-        {id: 1482, price: 12003, title: "جحم ۲۰ کیلوبیت", vol: 1, scale: "گیگابایت", description: "4 گیگ ترافیک عمومی پیش پرداخت (به مبلغ نهایی 5000 ﷼ کارمزد تراکنش بانکی افزوده می‌شود)" },
-        {id: 1482, price: 12003, title: "کیلوبیت", vol: 1, scale: "گیگابایت", description: "4 گیگ ترافیک عمومی پیش پرداخت (به مبلغ نهایی 5000 ﷼ کارمزد تراکنش بانکی افزوده می‌شود)" },
-        {id: 1482, price: 12003, title: "بق ۳۰ کیلوبیت", vol: 1, scale: "گیگابایت", description: "بسته ترافیکی کوتاه مدت (فوتون) - 5گیگ ترافیک با زمان مصرف30روزه 10000 تومان -(با داشتن زمان کافی از سرویسADSL) (به مبلغ نهایی 5000 ﷼ کارمزد تراکنش بانکی افزوده می‌شود)" },
-        {id: 1482, price: 12003, title: "کیلوبیت", vol: 1, scale: "گیگابایت", description: "4 گیگ ترافیک عمومی پیش پرداخت (به مبلغ نهایی 5000 ﷼ کارمزد تراکنش بانکی افزوده می‌شود)" },
-        {id: 1482, price: 12003, title: "کیلوبیت", vol: 1, scale: "گیگابایت", description: "4 گیگ ترافیک عمومی پیش پرداخت (به مبلغ نهایی 5000 ﷼ کارمزد تراکنش بانکی افزوده می‌شود)" }
-    ]
 });
