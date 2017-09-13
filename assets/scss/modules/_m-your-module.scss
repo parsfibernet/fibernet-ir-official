@@ -3,6 +3,9 @@ hr.dotted {
     margin: 3rem 0 3rem 0;
     max-width: 100%;
 }
+.reveal-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+}
 .close-button, .close-button.medium {
   left: 1rem;
 }
@@ -12,7 +15,6 @@ hr.dotted {
 .page-title{
   margin: 1em 0;
 }
-
 .brand{
   margin-bottom: 3rem;
   img{

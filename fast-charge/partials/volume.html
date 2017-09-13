@@ -25,14 +25,14 @@
             <li>کارمزد: <strong ng-bind="order.processing_fee | currency : '' : 0"></strong> ریال</li>
         </ul>
         <h3>مبلغ قابل پرداخت: <strong ng-bind="order.payable_amount | currency : '' : 0"></strong></h3>
+        <p>موافقت‌نامه <a href="/terms">استفاده از خدمات</a> و <a href="/terms">قوانین</a> را خوانده و پذیرفته‌ام</p>        
         <form method="post" action="https://sep.shaparak.ir/Payment.aspx">
-            <input id="agreement" type="checkbox" ng-model="agreement" ><label for="agreement">موافقت‌نامه استفاده از خدمات و قوانین را خوانده و پذیرفته‌ام.</label>                    
             <input type="hidden" aria-label="amount" value="{{order.gateway.data.Amount}}" name="Amount">
             <input type="hidden" aria-label="mid" value="{{order.gateway.data.MID}}" name="MID">
             <input type="hidden" aria-label="redirect" value="{{order.gateway.data.RedirectURL}}" name="RedirectURL">
             <input type="hidden" aria-label="resnum" value="{{order.gateway.data.ResNum}}" name="ResNum">
             <div class="text-center">
-                <input type="submit" class="alert button" ng-disabled="disBtn || !agreement" value="پرداخت با کارت شتاب" >
+                <input type="submit" class="alert button" ng-disabled="disBtn" value="پرداخت با کارت شتاب" >
             </div>
         </form>
     </div>
