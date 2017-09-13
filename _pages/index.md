@@ -15,7 +15,7 @@ isHome: true
                             <a href="#"><img src="assets/img/btn-google-play.svg" alt="fibernet-app" /></a>
                         </div>
                         <div class="column column-block">
-                            <a href="#"><img src="assets/img/btn-appstore.svg" alt="fibernet-app" /></a>
+                            <a data-open="reminder" ><img src="assets/img/btn-appstore.svg" alt="fibernet-app" /></a>
                         </div>
                         <div class="column column-block">
                             <a href="#"><img src="assets/img/btn-direct-link.svg" alt="fibernet-app" /></a>
@@ -43,7 +43,7 @@ isHome: true
                             <a href="#"><img src="assets/img/btn-google-play.svg" alt="fibernet-app" /></a>
                         </div>
                         <div class="column column-block">
-                            <a href="#"><img src="assets/img/btn-appstore.svg" alt="fibernet-app" /></a>
+                            <a data-open="reminder" ><img src="assets/img/btn-appstore.svg" alt="fibernet-app" /></a>
                         </div>
                         <div class="column column-block">
                             <a href="#"><img src="assets/img/btn-direct-link.svg" alt="fibernet-app" /></a>
@@ -60,4 +60,23 @@ isHome: true
             <img src="assets/img/mobile.png" alt="fibernet-app" style="margin-top: 3rem" />
         </div>
     </div>
+</div>
+
+<div class="reveal" id="reminder" data-animation-in="fade-in" data-animation-out="fade-out" data-reveal>
+    <p>ما در حال طراحی مجدد نسخه‌ی iOS فایبرنت هستیم. برای آکاهی از ارائه‌ی نسخه‌ی جدید، ایمیل یا شماره موبایل خود را وارد کنید. به شما خبر می‌دهیم. :)</p>
+    <form>
+        <div class="row">
+            <div class="small-12 columns">
+                <label>
+                    <input type="text" name="contact" placeholder="ایمیل یا شماره موبایل">
+                </label>
+            </div>
+            <div class="small-12 columns text-center">
+                <input type="submit" class="success button" value="خبر بده">
+            </div>
+        </div>
+    </form>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+    </button>
 </div>
