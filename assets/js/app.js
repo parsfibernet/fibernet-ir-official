@@ -2,7 +2,7 @@
 // --------------------------------------------------
 // APP.JS
 // --------------------------------------------------
-
+$(document).foundation();
 //
 // Initialize Foundation
 // --------------------------------------------------
@@ -35,13 +35,16 @@ var app = angular.module('fast-charge', ['ngRoute', 'angular-loading-bar', 'angu
 app.config(function($routeProvider) {
     $routeProvider
     .when("/", {
-      templateUrl : '../partials/login.html'
+      templateUrl : "../partials/login.html"
     })
     .when("/status", {
       templateUrl : "../partials/status.html"
     })
     .when("/service", {
       templateUrl : "../partials/service.html"
+    })
+    .when("/callback", {
+      templateUrl : "../partials/callback.html"
     })
     .when("/volume", {
       templateUrl : "../partials/volume.html"
@@ -63,7 +66,7 @@ app.config(function ($httpProvider) {
 
 // Main Controller
 // ---------------
-app.controller('mainCtrl', ($scope, $http, $location, $rootScope) => {
+app.controller('mainCtrl', ($scope, $http, $location, $rootScope, $routeParams) => {
     $(document).foundation();
     console.log('MainCtrl init');
     $rootScope.$on('cfpLoadingBar:started', () => {
@@ -103,6 +106,12 @@ app.controller('mainCtrl', ($scope, $http, $location, $rootScope) => {
                 console.log($scope.order);
             }
         );
+    }
+    $scope.routeParams = $routeParams;
+    $scope.checkStatus = () => {
+        if(typeof $scope.result == 'undefined')
+            // $location.path('/');
+            console.log('result undefined');
     }
     $scope.initVolume = () => {
         $location.path('volume');
