@@ -113,6 +113,9 @@ app.controller('mainCtrl', ($scope, $http, $location, $rootScope, $routeParams) 
             // $location.path('/');
             console.log('result undefined');
     }
+    $scope.initStatus = () => {
+        $location.path('status');
+    }
     $scope.initVolume = () => {
         $location.path('volume');
     }

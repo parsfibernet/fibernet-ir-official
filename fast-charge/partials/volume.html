@@ -1,6 +1,14 @@
 <div ng-init="checkStatus()" class="medium-12 columns">
-    <h2>خرید حجم</h2>
-    <h3 class="subheader">حجم (ترافیک) مورد نظر را انتخاب کنید.</h3>
+    <div class="row">
+        <div class="small-10 columns">
+            <h2>خرید حجم</h2>
+            <h3 class="subheader">حجم (ترافیک) مورد نظر را انتخاب کنید.</h3>
+        </div>
+        <div class="small-2 columns text-left">
+            <a class="back" ng-click="initStatus()" >بازگشت ←</a>
+        </div>
+    </div>
+    
     <div class="row small-up-1 medium-up-3">
         <div class="column services-callouts" ng-repeat="product in result.products.traffics">
             <div class="container-hover" ng-click="createOrder(product.products[0].id)" >
