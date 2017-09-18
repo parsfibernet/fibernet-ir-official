@@ -1,15 +1,17 @@
 <div ng-init="checkStatus()" class="card small-12 medium-5 medium-centered columns">
     <div class="card-section">
         <h2>اطلاعات حساب اینترنت</h2>
-        <p>شماره شما: <strong ng-bind="result.products.account.adsltel"></strong></p>
-        <p>حجم باقی مانده: <strong ng-bind="result.products.account.remaincredit | number"></strong> مگابایت</p>
-        <p>زمان باقی مانده: <strong ng-bind="result.products.account.remaindays"></strong> روز</p>
-        <p ng-bind="result.products.account.servicename" ></p>
-        <div class="row">
-            <div class="medium-12 columns">
-                <button ng-click="initService()" class="hollow button success">تمدید یا تغییر سرویس</button>
-                <button ng-click="initVolume()" class="hollow button success">خرید حجم</button>
-            </div>
+        <ul class="menu vertical">
+            <li>شماره شما: <strong ng-bind="result.products.account.adsltel"></strong></li>
+            <li>حجم باقی مانده: <strong ng-bind="result.products.account.remaincredit | number"></strong> مگابایت</li>
+            <li>زمان باقی مانده: <strong ng-bind="result.products.account.remaindays"></strong> روز</li>    
+        </ul>
+        <p>سرویس فعلی: <strong ng-bind="result.products.account.servicename"></strong>.</p>
+        <div class="row columns">
+            <ul class="menu">
+                <li><a class="changeStateBtn" ng-click="initService()" >تمدید یا تغییر سرویس</a></li>
+                <li><a class="changeStateBtn" ng-click="initVolume()" >خرید حجم</a></li>
+            </ul>
         </div>
     </div>
 </div>

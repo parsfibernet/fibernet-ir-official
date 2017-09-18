@@ -32,7 +32,7 @@
             <li>مالیات: <strong ng-bind="order.tax | currency : '' : 0"></strong> ریال</li>
             <li>کارمزد: <strong ng-bind="order.processing_fee | currency : '' : 0"></strong> ریال</li>
         </ul>
-        <h3>مبلغ قابل پرداخت: <strong ng-bind="order.payable_amount | currency : '' : 0"></strong></h3>
+        <h3>مبلغ قابل پرداخت: <strong ng-bind="order.payable_amount | currency : '' : 0"></strong> ریال</h3>
         <p>موافقت‌نامه <a href="/terms">استفاده از خدمات</a> و <a href="/terms">قوانین</a> را خوانده و پذیرفته‌ام</p>        
         <form method="post" action="https://sep.shaparak.ir/Payment.aspx">
             <input type="hidden" aria-label="amount" value="{{order.gateway.data.Amount}}" name="Amount">
