@@ -31,6 +31,13 @@ partials:
   dist: "_site/partials/"
   notification: "Running Partials"
 
+font:
+  assets:
+    - "node_modules/vazir-font/dist/Farsi-Digits-Without-Latin/**/*"
+  dist: "_site/assets/font/"
+  notification: "Running Font"
+
+
 javascript:
   dest:
     jekyllRoot: "assets/js/"

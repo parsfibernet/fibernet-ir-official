@@ -1,3 +1,52 @@
 // --------------------------------------------------
 // Theme
 // --------------------------------------------------
+@font-face {
+    font-family: Vazir;
+    src: url('../font/Vazir-FD-WOL.eot');
+    src: url('../font/Vazir-FD-WOL.eot?#iefix') format('embedded-opentype'),
+         url('../font/Vazir-FD-WOL.woff2') format('woff2'),
+         url('../font/Vazir-FD-WOL.woff') format('woff'),
+         url('../font/Vazir-FD-WOL.ttf') format('truetype');
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: Vazir;
+    src: url('../font/Vazir-Bold-FD-WOL.eot');
+    src: url('../font/Vazir-Bold-FD-WOL.eot?#iefix') format('embedded-opentype'),
+         url('../font/Vazir-Bold-FD-WOL.woff2') format('woff2'),
+         url('../font/Vazir-Bold-FD-WOL.woff') format('woff'),
+         url('../font/Vazir-Bold-FD-WOL.ttf') format('truetype');
+    font-weight: Bold;
+  }
+  
+  @font-face {
+    font-family: Vazir;
+    src: url('../font/Vazir-Light-FD-WOL.eot');
+    src: url('../font/Vazir-Light-FD-WOL.eot?#iefix') format('embedded-opentype'),
+         url('../font/Vazir-Light-FD-WOL.woff2') format('woff2'),
+         url('../font/Vazir-Light-FD-WOL.woff') format('woff'),
+         url('../font/Vazir-Light-FD-WOL.ttf') format('truetype');
+    font-weight: 300;
+  }
+  
+  @font-face {
+    font-family: Vazir;
+    src: url('../font/Vazir-Medium-FD-WOL.eot');
+    src: url('../font/Vazir-Medium-FD-WOL.eot?#iefix') format('embedded-opentype'),
+         url('../font/Vazir-Medium-FD-WOL.woff2') format('woff2'),
+         url('../font/Vazir-Medium-FD-WOL.woff') format('woff'),
+         url('../font/Vazir-Medium-FD-WOL.ttf') format('truetype');
+    font-weight: 500;
+  }
+  
+  @font-face {
+    font-family: Vazir;
+    src: url('../font/Vazir-Thin-FD-WOL.eot');
+    src: url('../font/Vazir-Thin-FD-WOL.eot?#iefix') format('embedded-opentype'),
+         url('../font/Vazir-Thin-FD-WOL.woff2') format('woff2'),
+         url('../font/Vazir-Thin-FD-WOL.woff') format('woff'),
+         url('../font/Vazir-Thin-FD-WOL.ttf') format('truetype');
+    font-weight: 100;
+  }
