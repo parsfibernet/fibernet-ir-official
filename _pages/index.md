@@ -29,7 +29,7 @@ isHome: true
             <small>همچنین با شماره گیری کد <code>#5050*788*</code> می‌توانید اینترنت خود را به آسانی شارژ کنید.</small>
         </div>
         <div class="medium-3 medium-offset-1 end columns text-center">
-            <img src="assets/img/mobile.png" alt="fibernet-app" />
+            <img src="/assets/img/demo.png" alt="fibernet-app" />
         </div>
     </div>
     <div class="show-for-small-only">

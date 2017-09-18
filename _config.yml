@@ -2,9 +2,9 @@
 language:               "fa"
 title:                  "فایبرنت"
 description:            ""
-url: http://fibernet.ir
+url: https://core.fibernet.ir
 google_analytics: 
-
+baseurl: "/fnn" # does not include hostname
 
 # Handling Reading
 include:

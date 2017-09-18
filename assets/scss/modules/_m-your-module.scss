@@ -8,12 +8,24 @@ hr.dotted {
     margin: 3rem 0 3rem 0;
     max-width: 100%;
 }
-.card-section .vertical li{
-  margin-bottom: 8px;
+.products-container{
+  margin-top: 4rem;
+}
+.filter-container {
+  margin-top: 1.125rem;
+}
+.card-section {
+  .vertical li {
+    margin-bottom: 8px;
+  }
+  strong {
+    font-weight: normal;
+  }
 }
 .changeStateBtn {
-  padding: 0.7rem 0 0.7rem 2rem !important;
+  padding: 1.125rem 0 0.7rem 1.5rem !important;
   color: $fiber-green;
+  font-size: 1.125rem;
 }
 .button {
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
@@ -167,7 +179,7 @@ span {
 }
 .topbar-responsive {
   background: $white;
-  padding: 1rem 1.5rem;
+  padding: 0.5rem 1.5rem;
 
   .topbar-responsive-logo {
     color: $fiber-green;
@@ -243,7 +255,9 @@ span {
       }
     }
   }
-
+  .top-bar-title{
+    margin: 0.5rem 0 0.5rem 0 !important;
+  }
    @media screen and (max-width: 39.9375em) {
      padding: 0.75rem;
 

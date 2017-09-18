@@ -9,14 +9,15 @@
         </div>
     </div>
     
-    <div class="row small-up-1 medium-up-3">
+    <div class="row small-up-1 medium-up-3 products-container">
         <div class="column services-callouts" ng-repeat="product in result.products.traffics">
             <div class="container-hover" ng-click="createOrder(product.products[0].id)" >
                 <div class="container">
-                    <h4 ng-bind="product.title"></h4>
-                    <p ng-bind="product.description"></p>
+                    <h3 ng-bind="product.title"></h3>
+                    <p><small ng-bind="product.description"></small></p>
                 </div>
                 <p class="link"><strong ng-bind="product.price | currency : '' : 0" ></strong> ریال</p>
+                <strong class="selBtn">انتخاب</strong>
             </div>
         </div>
     </div>
