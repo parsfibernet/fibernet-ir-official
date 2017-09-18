@@ -12,16 +12,16 @@ isHome: true
                 <div class="small-12 medium-8 columns">
                     <div class="row small-up-2 medium-up-2 large-up-2">
                         <div class="column column-block">
-                            <a href="#"><img src="assets/img/btn-google-play.svg" alt="fibernet-app" /></a>
+                            <a href="#"><img src="/assets/img/google-play.png" alt="fibernet-app" /></a>
                         </div>
                         <div class="column column-block">
-                            <a data-open="reminder" ><img src="assets/img/btn-appstore.svg" alt="fibernet-app" /></a>
+                            <a data-open="reminder" ><img src="/assets/img/app-store.png" alt="fibernet-app" /></a>
                         </div>
                         <div class="column column-block">
-                            <a href="#"><img src="assets/img/btn-direct-link.svg" alt="fibernet-app" /></a>
+                            <a href="#"><img src="/assets/img/direct-link.png" alt="fibernet-app" /></a>
                         </div>
                         <div class="column column-block">
-                            <a href="#"><img src="assets/img/btn-bazaar.svg" alt="fibernet-app" /></a>
+                            <a href="#"><img src="/assets/img/bazaar.png" alt="fibernet-app" /></a>
                         </div>
                     </div>
                 </div>
@@ -40,16 +40,16 @@ isHome: true
                 <div class="small-12 medium-8 columns">
                     <div class="row small-up-2">
                         <div class="column column-block">
-                            <a href="#"><img src="assets/img/btn-google-play.svg" alt="fibernet-app" /></a>
+                            <a href="#"><img src="/assets/img/google-play.png" alt="fibernet-app" /></a>
                         </div>
                         <div class="column column-block">
-                            <a data-open="reminder" ><img src="assets/img/btn-appstore.svg" alt="fibernet-app" /></a>
+                            <a data-open="reminder" ><img src="/assets/img/app-store.png" alt="fibernet-app" /></a>
                         </div>
                         <div class="column column-block">
-                            <a href="#"><img src="assets/img/btn-direct-link.svg" alt="fibernet-app" /></a>
+                            <a href="#"><img src="/assets/img/direct-link.png" alt="fibernet-app" /></a>
                         </div>
                         <div class="column column-block">
-                            <a href="#"><img src="assets/img/btn-bazaar.svg" alt="fibernet-app" /></a>
+                            <a href="#"><img src="/assets/img/bazaar.png" alt="fibernet-app" /></a>
                         </div>
                     </div>
                 </div>
@@ -57,7 +57,7 @@ isHome: true
             <small>همچنین با شماره گیری کد <code>#5050*788*</code> می‌توانید اینترنت خود را به آسانی شارژ کنید.</small>
         </div>
         <div class="small-10 small-offset-1 end columns text-center">
-            <img src="assets/img/mobile.png" alt="fibernet-app" style="margin-top: 3rem" />
+            <img src="/assets/img/demo.png" alt="fibernet-app" style="margin-top: 3rem" />
         </div>
     </div>
 </div>
