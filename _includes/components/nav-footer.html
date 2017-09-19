@@ -1,5 +1,5 @@
 <ul class="menu footer">
   {% for item in site.data.nav-footer %}
-    <li><a href="{{ item.url }}">{{ item.link }}</a></li>
+    <li><a href="{{ item.url | prepend: site.baseurl }}">{{ item.link }}</a></li>
   {% endfor %}
 </ul>
