@@ -2,9 +2,9 @@
     <div class="card-section">
         <h2>اطلاعات حساب اینترنت</h2>
         <ul class="menu vertical">
-            <li>شماره شما: <strong ng-bind="result.products.account.adsltel"></strong></li>
-            <li>حجم باقی مانده: <strong ng-bind="result.products.account.remaincredit | number"></strong> مگابایت</li>
-            <li>زمان باقی مانده: <strong ng-bind="result.products.account.remaindays"></strong> روز</li>    
+            <li>شماره تلفن: <strong ng-bind="result.products.account.adsltel"></strong></li>
+            <li>حجم باقی‌مانده: <strong ng-bind="result.products.account.remaincredit + result.products.account.deposit | number"></strong> مگابایت</li>
+            <li>زمان باقی‌مانده: <strong ng-bind="result.products.account.remaindays"></strong> روز</li>    
         </ul>
         <p>سرویس فعلی: <strong ng-bind="result.products.account.servicename"></strong>.</p>
         <div class="row columns">

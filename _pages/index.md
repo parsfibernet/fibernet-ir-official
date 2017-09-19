@@ -7,7 +7,7 @@ isHome: true
     <div class="show-for-medium">
         <div class="medium-6 medium-offset-1 columns">
             <h1 class="lead-title">مدیریت اینترنت با اپ فایبرنت</h1>
-            <p class="lead">اگر کاربر اینترنت مخابرات در استان مازندران هستید، می‌توانید با اپ فایبرنت حساب خود را شارژ کنید، حجم خریداری نمایید و از باقی مانده زمان و حجم سرویس با خبر شوید.</p>
+            <p class="lead">اگر کاربر اینترنت مخابرات در استان <strong>مازندران</strong> و <strong>کرمانشاه</strong> هستید، می‌توانید با اپ فایبرنت حساب خود را شارژ کنید، حجم خریداری نمایید و از باقی‌مانده زمان و حجم سرویس باخبر شوید.</p>
             <div class="row">
                 <div class="small-12 medium-8 columns">
                     <div class="row small-up-2 medium-up-2 large-up-2">

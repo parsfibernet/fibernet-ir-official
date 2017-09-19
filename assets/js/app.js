@@ -12,23 +12,28 @@ $(document).foundation();
 //
 // Custom JS
 // --------------------------------------------------
-$(window).bind("load", function () {
+$(window).bind("load", stickFooter());
+
+function stickFooter() {
+  console.log('FOOTER FIXED!');
     var footer = $("footer");
     var pos = footer.position();
     var height = $(window).height();
+    console.log('WIN HEIGHT: ', height);
     height = height - pos.top;
     height = height - footer.height();
     if (height > 0) {
         footer.css({
             'margin-top': height + 'px'
         });
+        console.log('HEIGHT: ', height);
     }
-});
+}
 
 //
 // Angular App
 // --------------------------------------------------
-var app = angular.module('fast-charge', ['ngRoute', 'angular-loading-bar', 'angular.filter']);
+var app = angular.module('fast-charge', ['ngRoute', 'angular-loading-bar', 'angular.filter', 'ngMessages']);
 
 // Angular Routing
 // ---------------
@@ -75,6 +80,9 @@ app.controller('mainCtrl', ($scope, $http, $location, $rootScope, $routeParams) 
     $rootScope.$on('cfpLoadingBar:loaded', () => {
         $scope.disBtn = false;
     });
+    $scope.setFooter = () => {
+      stickFooter();
+    }
     function getProducts(cid, pid, type, phone) {
         let url = `https://core.fibernet.ir/2.0/web/products/city/${cid}/provider/${pid}/types/${type}?phone=${phone}`;
         return $http.get(url);
@@ -126,6 +134,12 @@ app.controller('mainCtrl', ($scope, $http, $location, $rootScope, $routeParams) 
         console.log('clickTest');
     }
     $scope.fetchAllAvailableProducts = (phone, mobile) => {
+      console.log(typeof mobile);
+      if(typeof mobile == 'undefined' || typeof phone == 'undefined'){
+        $scope.showError = true;
+        $scope.result = {};
+        $scope.result.message = 'لطفا شماره تلفن و موبایل را وارد کنید';
+      } else {
         $scope.phone = phone;
         $scope.mobile = mobile;
         var code = phone.toString().substring(0,2);
@@ -154,6 +168,7 @@ app.controller('mainCtrl', ($scope, $http, $location, $rootScope, $routeParams) 
                 $scope.result = error.data;
             }
         );
+      }
     }
     $scope.mockResult = {
         "result": "OK",
