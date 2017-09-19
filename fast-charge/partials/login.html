@@ -1,29 +1,41 @@
 <div ng-init="checkStatus()" class="card small-12 medium-4 medium-centered columns">
     <div class="card-section">
         <h2>ورود به پنل شارژ اینترنت</h2>
-        <p>برای تمدید یا تغییر سرویس و نیز خرید حجم، شماره تلفن دارای سرویس ADSL و شماره موبایل خود را وارد کنید.</p> 
+        <p>تمدید یا تغییر سرویس ADSL مخابرات و خرید حجم در مازندران و کرمانشاه</p> 
         <form name="loginForm">
             <div class="row">
                 <div class="small-12 columns">
-                    <label>
-                        <input ng-model="phone" type="number" required minlength="10" maxlength="10" ng-pattern="/^(17|11|83)?\d{8}$/" placeholder="شماره تلفن">
+                    <label>شماره تلفن
+                        <input ng-model="phone" name="phone" type="number" required minlength="10" maxlength="10" ng-pattern="/^(17|11|83)?\d{8}$/" placeholder="1132xxxxx" autofocus >
                     </label>
+                    <div ng-messages="loginForm.phone.$error" role="alert">
+                            <p class="help-text" ng-message="required">با پیش‌شماره و بدون صفر اول</p>
+                            <p class="help-text" ng-message="minlength">شماره تلفن باید عددی ۱۰ رقمی باشد</p>
+                            <p class="help-text" ng-message="maxlength">شماره تلفن باید عددی ۱۰ رقمی باشد</p>
+                            <p class="help-text" ng-message="pattern">این شماره معتبر نیست</p>
+                    </div>
                 </div>
                 <div class="small-12 columns">
-                    <label>
-                        <input ng-model="mobile" type="number" required minlength="11" maxlength="11" ng-pattern="/^09(1|2|3|9)\d{8}$/" placeholder="شماره موبایل">
+                    <label>شماره موبایل
+                        <input ng-model="mobile" name="mobile" type="number" required minlength="11" maxlength="11" ng-pattern="/^09(1|2|3|9)\d{8}$/" placeholder="0911xxxxxxx">
                     </label>
+                    <div ng-messages="loginForm.mobile.$error" role="alert">
+                            <p class="help-text" ng-message="required">شماره همراه ۱۱ رقمی</p>
+                            <p class="help-text" ng-message="minlength">شماره شما باید عددی ۱۱ رقمی باشد.</p>
+                            <p class="help-text" ng-message="maxlength">شماره شما باید عددی ۱۱ رقمی باشد.</p>
+                            <p class="help-text" ng-message="pattern">این شماره معتبر نیست</p>
+                    </div>
                 </div>
                 <div class="small-12 columns" ng-show="showError" >
                     <div class="callout alert">
-                        <h5>متاسفانه مشکلی وجود دارد.</h5>
-                        <p ng-bind="result.message"></p>
+                        <p><small>اوه! {{ result.message }}</small></p>
                     </div>
                 </div>
                 <div style="margin-top: 34px" class="small-5 columns small-centered text-center">
-                    <button ng-click="fetchAllAvailableProducts(phone, mobile)" type="button" class="success button expanded" ng-disabled="loginForm.$invalid || disBtn" >تائید</button>
+                    <input ng-click="fetchAllAvailableProducts(phone, mobile)" type="submit" value="تایید" class="success button expanded" ng-disabled="disBtn" >
                 </div>
             </div>
-        </form>                  
+        </form>
+        <div ng-init="setFooter()" ></div>               
     </div>
 </div>
