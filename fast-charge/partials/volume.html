@@ -26,7 +26,7 @@
     <div ng-show="disBtn">
         <p>لطفا شکیبا باشید...</p>
     </div>
-    <div ng-hide="disBtn">
+    <div class="reveal-content" ng-hide="disBtn">
         <h2>صورت‌حساب شماره {{ order.id }}</h2>
         <ul class="vertical menu">
             <li>قیمت محصول: <strong ng-bind="order.total_amount | currency : '' : 0"></strong> ریال</li>
