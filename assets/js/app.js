@@ -12,23 +12,6 @@ $(document).foundation();
 //
 // Custom JS
 // --------------------------------------------------
-$(window).bind("load", stickFooter());
-
-function stickFooter() {
-  console.log('FOOTER FIXED!');
-    var footer = $("footer");
-    var pos = footer.position();
-    var height = $(window).height();
-    console.log('WIN HEIGHT: ', height);
-    height = height - pos.top;
-    height = height - footer.height();
-    if (height > 0) {
-        footer.css({
-            'margin-top': height + 'px'
-        });
-        console.log('HEIGHT: ', height);
-    }
-}
 
 //
 // Angular App
@@ -80,9 +63,6 @@ app.controller('mainCtrl', ($scope, $http, $location, $rootScope, $routeParams) 
     $rootScope.$on('cfpLoadingBar:loaded', () => {
         $scope.disBtn = false;
     });
-    $scope.setFooter = () => {
-      stickFooter();
-    }
     function getProducts(cid, pid, type, phone) {
         let url = `https://core.fibernet.ir/2.0/web/products/city/${cid}/provider/${pid}/types/${type}?phone=${phone}`;
         return $http.get(url);

@@ -1,11 +1,11 @@
 <div ng-init="checkStatus()" class="medium-12 columns">
     <div class="row">
         <div class="small-10 columns">
-                <h2>تمدید یا تغییر سرویس</h2>
-                <h3 class="subheader">مدت و سرعت سرویس مورد نظر را انتخاب کنید.</h3>
+            <h2>تمدید یا تغییر سرویس</h2>
+            <h3 class="subheader">مدت و سرعت سرویس مورد نظر را انتخاب کنید.</h3>
         </div>
         <div class="small-2 columns text-left">
-            <a class="back" ng-click="initStatus()" >بازگشت ←</a>
+            <a class="back" ng-click="initStatus()" ><small class="show-for-medium">بازگشت </small>←</a>
         </div>
     </div>
     <div class="row filter-container">
@@ -41,15 +41,15 @@
     <div ng-show="disBtn">
         <p>لطفا شکیبا باشید...</p>
     </div>
-    <div ng-hide="disBtn">
-        <h2>صورت‌حساب شماره <strong ng-bind="order.id"></strong></h2>
+    <div class="reveal-content" ng-hide="disBtn">
+        <h2>صورت‌حساب شماره {{ order.id }}</h2>
         <ul class="vertical menu">
             <li>قیمت محصول: <strong ng-bind="order.total_amount | currency : '' : 0"></strong> ریال</li>
             <li>مالیات: <strong ng-bind="order.tax | currency : '' : 0"></strong> ریال</li>
             <li>کارمزد: <strong ng-bind="order.processing_fee | currency : '' : 0"></strong> ریال</li>
         </ul>
-        <h3>مبلغ قابل پرداخت: <strong ng-bind="order.payable_amount | currency : '' : 0"></strong> ریال</h3>
-        <p>موافقت‌نامه <a href="/terms">استفاده از خدمات</a> و <a href="/terms">قوانین</a> را خوانده و پذیرفته‌ام</p>
+        <p>مبلغ قابل پرداخت: <strong ng-bind="order.payable_amount | currency : '' : 0"></strong> ریال</p>
+        <p><small>موافقت‌نامه <a href="/terms">استفاده از خدمات</a> و <a href="/terms">قوانین</a> را خوانده و پذیرفته‌ام</small></p>
         <form method="post" action="https://sep.shaparak.ir/Payment.aspx">
             <input type="hidden" aria-label="amount" value="{{order.gateway.data.Amount}}" name="Amount">
             <input type="hidden" aria-label="mid" value="{{order.gateway.data.MID}}" name="MID">
