@@ -118,9 +118,11 @@ label{
 .reveal-content{
   padding-right: 1.25rem;
   padding-left: 1.25rem; 
-}
+} 
 .reveal{
-  width: 398px;
+  @media screen and (min-width: 40em) {
+    width: 398px;
+  }
   strong{
     font-weight: normal;
   }
