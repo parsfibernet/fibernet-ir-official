@@ -52,7 +52,7 @@
             <li>کارمزد: <strong ng-bind="order.processing_fee | currency : '' : 0"></strong> ریال</li>
         </ul>
         <p>مبلغ قابل پرداخت: <strong ng-bind="order.payable_amount | currency : '' : 0"></strong> ریال</p>
-        <p><small>موافقت‌نامه <a href="/terms">استفاده از خدمات</a> و <a href="/terms">قوانین</a> را خوانده و پذیرفته‌ام</small></p>
+        <p><small>موافقت‌نامه <a href="/terms">استفاده از خدمات</a> و <a href="/terms">قوانین</a> را خوانده و پذیرفته‌ام.</small></p>
         <form method="post" action="https://sep.shaparak.ir/Payment.aspx">
             <input type="hidden" aria-label="amount" value="{{order.gateway.data.Amount}}" name="Amount">
             <input type="hidden" aria-label="mid" value="{{order.gateway.data.MID}}" name="MID">
