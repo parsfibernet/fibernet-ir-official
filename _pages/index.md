@@ -6,10 +6,10 @@ isHome: true
 <div class="row main-content">
     <div class="show-for-medium">
         <div class="medium-6 medium-offset-1 columns">
-            <h1 class="lead-title">مدیریت اینترنت با اپ فایبرنت</h1>
+            <h1 class="lead-title">MEDمدیریت اینترنت با اپ فایبرنت</h1>
             <p class="lead">اگر کاربر اینترنت مخابرات در استان <strong>مازندران</strong> و <strong>کرمانشاه</strong> هستید، می‌توانید با اپ فایبرنت حساب خود را شارژ کنید، حجم خریداری نمایید و از باقی‌مانده زمان و حجم سرویس باخبر شوید.</p>
             <div class="row">
-                <div class="small-12 medium-8 columns">
+                <div class="small-12 medium-12 large-8 columns">
                     <div class="row small-up-2 medium-up-2 large-up-2">
                         <div class="column column-block">
                             <a href="#"><img src="{{ "/assets/img/google-play.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
@@ -34,7 +34,7 @@ isHome: true
     </div>
     <div class="show-for-small-only">
         <div class="small-10 small-offset-1 columns text-center">
-            <h1 class="lead-title">مدیریت اینترنت با اپ فایبرنت</h1>
+            <h1 class="lead-title">SMLمدیریت اینترنت با اپ فایبرنت</h1>
             <p class="lead">اگر کاربر اینترنت مخابرات در استان مازندران هستید، می‌توانید با اپ فایبرنت حساب خود را شارژ کنید، حجم خریداری نمایید و از باقی مانده زمان و حجم سرویس با خبر شوید.</p>
             <div class="row">
                 <div class="small-12 medium-8 columns">
