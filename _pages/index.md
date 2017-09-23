@@ -63,19 +63,20 @@ isHome: true
 </div>
 
 <div class="reveal" id="reminder" data-animation-in="fade-in" data-animation-out="fade-out" data-reveal>
-    <p>ما در حال طراحی مجدد نسخه‌ی iOS فایبرنت هستیم. برای آکاهی از ارائه‌ی نسخه‌ی جدید، ایمیل یا شماره موبایل خود را وارد کنید. به شما خبر می‌دهیم. :)</p>
-    <form>
+    <h2>نسخه iOS</h2>
+    <p>ما در حال طراحی مجدد نسخه‌ی iOS فایبرنت هستیم. برای آکاهی از ارائه‌ی نسخه‌ی جدید، ایمیل یا شماره موبایل خود را وارد کنید. به شما خبر می‌دهیم :)</p>
         <div class="row">
             <div class="small-12 columns">
                 <label>
-                    <input type="text" name="contact" placeholder="ایمیل یا شماره موبایل">
+                    <input type="text" id="ios-contact" name="contact" placeholder="ایمیل یا شماره موبایل">
                 </label>
             </div>
             <div class="small-12 columns text-center">
-                <input type="submit" class="success button" value="خبر بده">
+                <button id="ios-btn" class="success button" >خبر بده</button>
+                <p id="ios-loading" style="display: none;">لطفاً شکیبا باشید...</p>
+                <p id="ios-done" style="display: none;">دریافت شد. منتظر خبر ما باشید.</p>
             </div>
         </div>
-    </form>
     <button class="close-button" data-close aria-label="Close modal" type="button">
     <span aria-hidden="true">&times;</span>
     </button>

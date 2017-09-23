@@ -12,7 +12,17 @@ $(document).foundation();
 //
 // Custom JS
 // --------------------------------------------------
-
+$("#ios-btn").click(() => {
+  $("#ios-btn").css("display", "none");
+  $("#ios-loading").css("display", "block");
+  var contactField = $( "#ios-contact" ).val();
+  console.log('contact: ', contactField);
+  $.post( "https://getsimpleform.com/messages?form_api_token=7e18a0a7adda33f7f50e8fb90736fabb", { 'contact':  contactField} )
+    .done(function(data){
+      $("#ios-loading").css("display", "none");
+      $("#ios-done").css("display", "block");
+    });
+});
 //
 // Angular App
 // --------------------------------------------------
