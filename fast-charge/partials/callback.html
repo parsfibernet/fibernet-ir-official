@@ -1,19 +1,19 @@
-<div class="card small-12 medium-5 medium-centered columns">
+<div class="card small-12 medium-4 medium-centered columns">
     <div class="card-section">
         <form name="loginForm">
             <div class="row">
                 <div ng-if="routeParams.result =='OK'" class="small-12 columns text-center">
                     <img src="/assets/img/successful.png" alt="successful face" />
                     <h2>پرداخت با موفقیت انجام شد.</h2>
-                    <p>کد رهگیری شما : <code>{{routeParams.code}}</code></p>
+                    <p><small>کد رهگیری شما : <code>{{routeParams.code}}</code></small></p>
                 </div>
                 <div ng-if="routeParams.result =='FAIL'" class="small-12 columns text-center">
                     <img src="/assets/img/failed.png" alt="failed face" />
                     <h2>پرداخت انجام نشد!</h2>
-                    <p>کد رهگیری شما : <code>{{routeParams.code}}</code></p>
+                    <p><small>کد رهگیری شما : <code>{{routeParams.code}}</code></small></p>
                 </div>
                 <div class="small-12 columns text-center">
-                    <a href="/fast-charge" class="success button" >به خانه برگرد</a>
+                    <a href="/fast-charge" class="clear secondary button" >به خانه برگرد</a>
                 </div>
             </div>
         </form>                  
