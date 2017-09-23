@@ -53,6 +53,9 @@ hr.dotted {
 .button.success, .button.alert {
   color: $white !important;
 }
+.button.clear{
+  box-shadow: 0 2px 4px 0 transparent;
+}
 .changeStateBtn:hover {
   color: $fiber-green;
 }
@@ -61,7 +64,7 @@ textarea {
   box-shadow: inset 0 1px 2px transparent;
 }
 .help-text{
-  color: #d32f2f;
+  color: #D32F2F;
 }
 [type='text']:focus, [type='password']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='week']:focus, [type='email']:focus, [type='number']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='url']:focus, [type='color']:focus, textarea:focus {
   outline: none;
@@ -477,7 +480,7 @@ span {
   -o-transition: width 350ms;
   transition: width 350ms;
 
-  background: #29d;
+  background: #0288D1;
   position: fixed;
   z-index: 10002;
   top: 81px;
@@ -499,10 +502,10 @@ span {
   top: 0;
   height: 2px;
   opacity: .45;
-  -moz-box-shadow: #29d 1px 0 6px 1px;
-  -ms-box-shadow: #29d 1px 0 6px 1px;
-  -webkit-box-shadow: #29d 1px 0 6px 1px;
-  box-shadow: #29d 1px 0 6px 1px;
+  -moz-box-shadow: #0288D1 1px 0 6px 1px;
+  -ms-box-shadow: #0288D1 1px 0 6px 1px;
+  -webkit-box-shadow: #0288D1 1px 0 6px 1px;
+  box-shadow: #0288D1 1px 0 6px 1px;
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
   border-radius: 100%;
@@ -517,8 +520,8 @@ span {
   height: 14px;
 
   border:  solid 2px transparent;
-  border-top-color:  #29d;
-  border-left-color: #29d;
+  border-top-color:  #0288D1;
+  border-left-color: #0288D1;
   border-radius: 50%;
 
   -webkit-animation: loading-bar-spinner 400ms linear infinite;
