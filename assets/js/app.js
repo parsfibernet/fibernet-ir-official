@@ -128,7 +128,7 @@ app.controller('mainCtrl', ($scope, $http, $location, $rootScope, $routeParams) 
       if(typeof mobile == 'undefined' || typeof phone == 'undefined'){
         $scope.showError = true;
         $scope.result = {};
-        $scope.result.message = 'لطفا شماره تلفن و موبایل را وارد کنید';
+        $scope.result.message = 'لطفاً شماره تلفن و موبایل را وارد کنید.';
       } else {
         $scope.phone = phone;
         $scope.mobile = mobile;
