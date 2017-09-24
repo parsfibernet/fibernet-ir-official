@@ -282,17 +282,12 @@ footer.callout {
       
       @media screen and (max-width: 39.9375em) {
         margin: 0 !important;
-        width: 100%;
+        display: inline-block;
       }
     }
 
     li:last-of-type {
       margin-left: 0;
-      a {
-        @media screen and (max-width: 39.9375em) {
-          border-bottom: 1px solid $fiber-green;
-        }
-      }
     }
 
     a {
@@ -309,9 +304,8 @@ footer.callout {
       }
 
       @media screen and (max-width: 39.9375em) {
-        padding: 0.875rem 0;
+        padding: 0.875rem 1.7rem;
         display: block;
-        border-bottom: 1px dotted #424242;
         text-align: center;
       }
     }
@@ -343,31 +337,8 @@ footer.callout {
   .top-bar-title{
     margin: 0.5rem 0 0.5rem 0 !important;
   }
-   @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 39.9375em) {
      padding: 0.75rem;
-
-    .top-bar-title {
-      position: relative;
-      width: 100%;
-
-      span {
-        position: absolute;
-        left: 1em;
-        border: 1px solid $fiber-green;
-        border-radius: 5px;
-        padding: 0.25rem 0.45rem;
-        top: 50%;
-        transform: translateY(-50%);
-
-        .menu-icon {
-          margin-bottom: 4px;
-          &:after {
-            background: $fiber-green;
-            box-shadow: 0 7px 0 $fiber-green, 0 14px 0 $fiber-green;
-          }
-        }
-      }
-    }
   }
 }
 
@@ -392,7 +363,6 @@ footer.callout {
   .topbar-responsive-links {
     animation-fill-mode: both;
     animation-duration: 0.5s;
-    width: 100%;
 
     @if $topbar-responsive-animation-type == slide-down {
       animation: slideDown 1s ease-in;
