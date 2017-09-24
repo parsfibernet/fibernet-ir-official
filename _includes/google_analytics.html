@@ -5,5 +5,7 @@
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
   ga('create', '{{ site.google_analytics }}', 'auto');
+  {% if page.layout != 'fast' %}
   ga('send', 'pageview');
+  {% endif %}
 </script>

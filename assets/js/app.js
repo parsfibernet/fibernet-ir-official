@@ -66,7 +66,10 @@ app.config(function ($httpProvider) {
 // ---------------
 app.controller('mainCtrl', ($scope, $http, $location, $rootScope, $routeParams) => {
     $(document).foundation();
-    console.log('MainCtrl init');
+    $scope.$on('$routeChangeSuccess', (angularEvent, next, current) => {
+      ga('set', 'page', next.$$route.originalPath);
+      ga('send', 'pageview');
+    });
     $rootScope.$on('cfpLoadingBar:started', () => {
         $scope.disBtn = true;
     });
@@ -81,9 +84,6 @@ app.controller('mainCtrl', ($scope, $http, $location, $rootScope, $routeParams) 
         var popup = new Foundation.Reveal($('#recipe'));
         popup.open();
         $scope.pid = pid;
-        console.log('phone : ', $scope.phone);
-        console.log('mobile : ', $scope.mobile);
-        console.log('pid : ', $scope.pid);
         let url = 'https://core.fibernet.ir/2.0/web/orders/withGateway';
         let data = {};
         data.mobile = $scope.mobile;
@@ -108,8 +108,8 @@ app.controller('mainCtrl', ($scope, $http, $location, $rootScope, $routeParams) 
     $scope.routeParams = $routeParams;
     $scope.checkStatus = () => {
         if(typeof $scope.result == 'undefined')
-            // $location.path('/');
-            console.log('result undefined');
+            $location.path('/');
+            // console.log('result undefined');
     }
     $scope.initStatus = () => {
         $location.path('status');
