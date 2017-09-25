@@ -2,6 +2,7 @@
 permalink: /
 layout: index
 isHome: true
+date: 2017-03-22
 ---
 <div class="row main-content">
     <div class="show-for-medium">
@@ -12,7 +13,7 @@ isHome: true
                 <div class="small-12 medium-12 large-8 columns">
                     <div class="row small-up-2 medium-up-2 large-up-2">
                         <div class="column column-block">
-                            <a href="#"><img src="{{ "/assets/img/google-play.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
+                            <a href="https://play.google.com/store/apps/details?id=ir.fibernet.fiberman"><img src="{{ "/assets/img/google-play.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
                         </div>
                         <div class="column column-block">
                             <a data-open="reminder" ><img src="{{ "/assets/img/app-store.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
@@ -21,7 +22,7 @@ isHome: true
                             <a href="#"><img src="{{ "/assets/img/direct-link.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
                         </div>
                         <div class="column column-block">
-                            <a href="#"><img src="{{ "/assets/img/bazaar.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
+                            <a href="https://cafebazaar.ir/app/ir.fibernet.fiberman/"><img src="{{ "/assets/img/bazaar.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
                         </div>
                     </div>
                 </div>
@@ -40,7 +41,7 @@ isHome: true
                 <div class="small-12 medium-8 columns">
                     <div class="row small-up-2">
                         <div class="column column-block">
-                            <a href="#"><img src="{{ "/assets/img/google-play.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
+                            <a href="https://play.google.com/store/apps/details?id=ir.fibernet.fiberman"><img src="{{ "/assets/img/google-play.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
                         </div>
                         <div class="column column-block">
                             <a data-open="reminder" ><img src="{{ "/assets/img/app-store.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
@@ -49,7 +50,7 @@ isHome: true
                             <a href="#"><img src="{{ "/assets/img/direct-link.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
                         </div>
                         <div class="column column-block">
-                            <a href="#"><img src="{{ "/assets/img/bazaar.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
+                            <a href="https://cafebazaar.ir/app/ir.fibernet.fiberman/"><img src="{{ "/assets/img/bazaar.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
                         </div>
                     </div>
                 </div>

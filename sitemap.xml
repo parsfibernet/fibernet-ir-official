@@ -11,10 +11,18 @@ sitemap: false
 {% for page in site.pages %}
     {% if page.sitemap != false %}
         <url>
-        <loc>{{ site.url }}{{ page.permalink }}</loc>
-        <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
-        <changefreq>yearly</changefreq>
+        <loc>{{ site.url }}{{ page.url }}</loc>
         </url>
     {% endif %}
+{% endfor %}
+{% for page in site.posts %}
+        <url>
+        <loc>{{ site.url }}{{ page.url }}</loc>
+        </url>
+{% endfor %}
+{% for page in site.tutorial %}
+        <url>
+        <loc>{{ site.url }}{{ page.url }}</loc>
+        </url>
 {% endfor %}
 </urlset>
