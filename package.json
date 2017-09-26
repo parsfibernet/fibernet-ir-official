@@ -8,6 +8,11 @@
     "motion-ui": "^1.2.3"
   },
   "devDependencies": {
+    "angular": "^1.6.6",
+    "angular-filter": "^0.5.16",
+    "angular-loading-bar": "^0.9.0",
+    "angular-messages": "^1.6.6",
+    "angular-route": "^1.6.6",
     "babel-plugin-transform-es2015-arrow-functions": "^6.3.13",
     "babel-plugin-transform-es2015-block-scoped-functions": "^6.3.13",
     "babel-plugin-transform-es2015-block-scoping": "^6.4.0",
@@ -37,6 +42,7 @@
     "js-yaml": "^3.5.4",
     "require-dir": "^0.3.1",
     "run-sequence": "^1.2.2",
+    "vazir-font": "^15.0.0",
     "yargs": "^6.4.0"
   },
   "scripts": {

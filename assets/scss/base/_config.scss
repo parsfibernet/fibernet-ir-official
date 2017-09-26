@@ -6,6 +6,12 @@ $global-text-direction: rtl;
 //
 // Colors
 // --------------------------------------------------
-
+$foundation-palette: (
+    primary: #0288D1,
+    secondary: #0288D1,
+    success: #4CAF50,
+    warning: #B71C1C,
+    alert: #EF5350,
+  );
 $black: #000;
 $white: #fff;

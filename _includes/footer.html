@@ -1,11 +1,14 @@
+{% if page.layout != 'fast' %}
 <footer class="callout large clearfix">
     <div class="row">
-        <div class="medium-6 columns">
+        <div class="small-12 medium-6 columns">
             {% include components/nav-footer.html %}
         </div>
-        <div class="medium-6 columns">
-            <span>شماره تماس: ۰۱۷۳۲۳۲۸۹۲۹</span>
+        <div class="small-12  medium-6 columns contact-info">
+                <span>شماره تماس: ۰۱۷۳۲۳۲۸۹۲۹</span>
+                <span>شناسه تلگرام: <a href="https://t.me/fibernetsupport" title="شناسه تلگرام" >@fibernetsupport</a></span>
         </div>
     </div>
 </footer>
+{% endif %}
 {% include foot.html %}

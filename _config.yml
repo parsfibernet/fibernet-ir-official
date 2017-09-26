@@ -4,7 +4,7 @@ title:                  "فایبرنت"
 description:            ""
 url: http://fibernet.ir
 google_analytics: 
-
+# baseurl: "/fnn" # does not include hostname
 
 # Handling Reading
 include:
@@ -13,6 +13,7 @@ include:
 
 exclude:
   - "/assets/"
+  - "/fast-charge/partials/"
   - "bower.json"
   - "composer.json"
   - "composer.lock"

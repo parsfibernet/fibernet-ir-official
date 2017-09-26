@@ -10,7 +10,7 @@ layout: compress
                 <h2>{{ post.title }}</h2>
                 <small>{{ post.date | jdate: "%A %d %b %Y"}}</small>
                 <p>{{ post.excerpt }}</p>
-                <a href="{{ post.url }}">ادامه مطلب ...</a>
+                <a href="{{ post.url | prepend: site.baseurl }}">ادامه مطلب ...</a>
             </div>
         </div>
         {% endfor %}

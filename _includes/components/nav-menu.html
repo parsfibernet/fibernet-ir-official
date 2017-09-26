@@ -1,26 +1,23 @@
 <div class="top-bar-container" data-sticky-container>
-  <div class="sticky sticky-topbar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
-    <nav class="top-bar topbar-responsive">
-        <div class="top-bar-title">
-          <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
-            <button class="menu-icon" type="button" data-toggle></button>
-          </span>
-          <a class="topbar-responsive-logo" href="/">
-            <img src="/assets/img/fibernet-logotype.png" alt="{{ site.title }}" >  
-          </a>
-        </div>
-        <div id="topbar-responsive" class="topbar-responsive-links">
-          <div class="top-bar-left">
-            <ul class="menu simple vertical medium-horizontal">
-              {% for item in site.data.nav-main %}
-              <li><a href="{{ item.url }}">{{ item.link }}</a></li>
-              {% endfor %}
-              <li>
-                <a href="/fast-charge" class="button hollow topbar-responsive-button">شارژ سریع</a>
-              </li>
-            </ul>
+    <div class="sticky sticky-topbar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+      <nav class="top-bar topbar-responsive">
+          <div class="top-bar-title">
+            <a class="topbar-responsive-logo" href="{{ "/" | prepend: site.baseurl }}">
+              <img src="{{ "/assets/img/logo.png" | prepend: site.baseurl }}" alt="{{ site.title }}" >  
+            </a>
           </div>
-        </div>
-    </nav>
+          <div class="topbar-responsive-links">
+            <div class="top-bar-left">
+              <ul class="menu simple small-horizontal">
+                {% for item in site.data.nav-main %}
+                <li><a href="{{ item.url | prepend: site.baseurl }}">{{ item.link }}</a></li>
+                {% endfor %}
+                <li>
+                  <a href="{{ "/fast-charge" | prepend: site.baseurl }}" class="button hollow topbar-responsive-button">شارژ سریع</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </nav>
+    </div>
   </div>
-</div>

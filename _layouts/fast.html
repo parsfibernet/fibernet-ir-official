@@ -2,29 +2,5 @@
 layout: compress
 ---
 {% include header.html %}
-<div class="row" style="margin-top: 3rem">
-    <div class="card small-12 medium-5 medium-centered columns">
-        <div class="card-section">
-            <h2>ورود به پنل شارژ اینترنت</h2>
-            <p>برای تمدید یا تغییر سرویس و نیز خرید حجم، شماره تلفن دارای سرویس ADSL و شماره موبایل خود را وارد کنید.</p> 
-            <form>
-                <div class="row">
-                    <div class="medium-12 columns">
-                        <label>
-                            <input type="text" placeholder="شماره تلفن">
-                        </label>
-                    </div>
-                    <div class="medium-12 columns">
-                        <label>
-                            <input type="text" placeholder="شماره موبایل">
-                        </label>
-                    </div>
-                    <div class="medium-12 columns text-center">
-                        <button type="button" class="success button">تائید</button>                            
-                    </div>
-                </div>
-            </form>                  
-        </div>
-    </div>
-</div>
+<div class="row app-container" ng-app="fast-charge" ng-controller="mainCtrl" ng-view ></div>
 {% include footer.html %}
