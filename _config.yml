@@ -4,7 +4,7 @@ title:                  "فایبرنت"
 description:            ""
 url: http://fibernet.ir
 google_analytics: 
-# baseurl: "/fnn" # does not include hostname
+# baseurl: "/fnn"
 
 # Handling Reading
 include:
