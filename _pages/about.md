@@ -10,46 +10,46 @@ isHome: false
 ## تیم ما
 <div class="row">
     <div class="medium-3 columns text-center team">
-        <img src="{{ "http://placehold.it/128x128" | prepend: site.baseurl }}" class="image-round" alt="fibernet-app" />
+        <img src="{{ "/assets/img/content/salehpour.jpg" | prepend: site.baseurl }}" class="image-round" alt="fibernet-app" />
         <h4>فرامرز صالح‌پور</h4>
         <h5>Senior Backend Dev.</h5>
     </div>
     <div class="medium-3 columns text-center team">
-        <img src="{{ "http://placehold.it/128x128" | prepend: site.baseurl }}" class="image-round" alt="fibernet-app" />
-        <h4>فرامرز صالح‌پور</h4>
-        <h5>Senior Backend Dev.</h5>
+        <img src="{{ "/assets/img/content/rezamoshtaghi.jpg" | prepend: site.baseurl }}" class="image-round" alt="fibernet-app" />
+        <h4>رضا مشتاقی</h4>
+        <h5>Project Manager</h5>
     </div>
     <div class="medium-3 columns text-center team">
-        <img src="{{ "http://placehold.it/128x128" | prepend: site.baseurl }}" class="image-round" alt="fibernet-app" />
-        <h4>فرامرز صالح‌پور</h4>
-        <h5>Senior Backend Dev.</h5>
+        <img src="{{ "/assets/img/content/mohsenian.jpg" | prepend: site.baseurl }}" class="image-round" alt="fibernet-app" />
+        <h4>مهسا محسنیان</h4>
+        <h5>Oprations</h5>
     </div>
     <div class="medium-3 columns text-center team">
-        <img src="{{ "http://placehold.it/128x128" | prepend: site.baseurl }}" class="image-round" alt="fibernet-app" />
-        <h4>فرامرز صالح‌پور</h4>
-        <h5>Senior Backend Dev.</h5>
+        <img src="{{ "/assets/img/content/mehdimoshtaghi.jpg" | prepend: site.baseurl }}" class="image-round" alt="fibernet-app" />
+        <h4>مهدی مشتاقی</h4>
+        <h5>FrontEnd Developer</h5>
     </div>
 </div>
 <div class="row">
     <div class="medium-3 columns text-center team">
-        <img src="{{ "http://placehold.it/128x128" | prepend: site.baseurl }}" class="image-round" alt="fibernet-app" />
-        <h4>فرامرز صالح‌پور</h4>
-        <h5>Senior Backend Dev.</h5>
+        <img src="{{ "/assets/img/content/eslami.jpg" | prepend: site.baseurl }}" class="image-round" alt="fibernet-app" />
+        <h4>منیره اسلامی</h4>
+        <h5>Researcher</h5>
     </div>
     <div class="medium-3 columns text-center team">
-        <img src="{{ "http://placehold.it/128x128" | prepend: site.baseurl }}" class="image-round" alt="fibernet-app" />
-        <h4>فرامرز صالح‌پور</h4>
-        <h5>Senior Backend Dev.</h5>
+        <img src="{{ "/assets/img/content/shayanhosseini.jpg" | prepend: site.baseurl }}" class="image-round" alt="fibernet-app" />
+        <h4>شایان حسینی</h4>
+        <h5>Backend Developer</h5>
     </div>
     <div class="medium-3 columns text-center team">
-        <img src="{{ "http://placehold.it/128x128" | prepend: site.baseurl }}" class="image-round" alt="fibernet-app" />
-        <h4>فرامرز صالح‌پور</h4>
-        <h5>Senior Backend Dev.</h5>
+        <img src="{{ "/assets/img/content/amlashi.jpg" | prepend: site.baseurl }}" class="image-round" alt="fibernet-app" />
+        <h4>صدرا عیسی‌پناه املشی</h4>
+        <h5>iOS/Android Developer</h5>
     </div>
     <div class="medium-3 columns text-center team">
-        <img src="{{ "http://placehold.it/128x128" | prepend: site.baseurl }}" class="image-round" alt="fibernet-app" />
-        <h4>فرامرز صالح‌پور</h4>
-        <h5>Senior Backend Dev.</h5>
+        <img src="{{ "/assets/img/content/dshayan.jpg" | prepend: site.baseurl }}" class="image-round" alt="fibernet-app" />
+        <h4>شایان مهردوست</h4>
+        <h5>Designer</h5>
     </div>
 </div>
 &nbsp;

@@ -449,7 +449,11 @@ footer.callout {
 // Team
 // --------------------------------------------------
 .team{
-  margin-top: 2rem;
+  margin-top: 4rem;
+  img{
+    max-width: 128px;
+    max-height: 128px;
+  }
   h4{
     margin-top: 1rem;
   }
