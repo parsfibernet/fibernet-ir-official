@@ -3,7 +3,7 @@ language:               "fa"
 title:                  "فایبرنت"
 description:            ""
 url: http://fibernet.ir
-google_analytics: 
+google_analytics: "UA-70466258-1"
 # baseurl: "/fnn"
 
 # Handling Reading
