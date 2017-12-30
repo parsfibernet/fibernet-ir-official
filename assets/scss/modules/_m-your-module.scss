@@ -29,7 +29,16 @@ body.index{
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-
+.card-section img{
+  display: block;
+  max-width: 99%;
+  margin: 1rem auto;
+}
+.post, .page {
+  .card-section ul, .card-section ol {
+    margin-right: 3rem;
+  }
+}
 /* Hide HTML5 Up and Down arrows. */
 input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -81,6 +90,7 @@ hr.dotted {
 }
 .button {
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+  font-weight: bold;
 }
 .button.success, .button.alert {
   color: $white !important;
@@ -113,8 +123,8 @@ label{
   font-size: 19px;
   @media screen and (max-width: 39.9375em) {
       position: fixed;
-      left: 1rem;
-      bottom: 1rem;
+      left: 1.250rem;
+      bottom: 6rem;
       display:block;
       width:50px;
       height:50px;
@@ -309,6 +319,7 @@ footer.callout {
 
     li:last-of-type {
       margin-left: 0;
+      font-weight: bold;
     }
 
     a {
