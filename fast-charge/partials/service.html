@@ -27,7 +27,7 @@
             </div>
     </div>
     <div class="row small-up-1 medium-up-3 products-container">
-        <div class="column services-callouts" ng-repeat="product in result.products.services | filter: {period: selectPeriod, rate: selectRate}">
+        <div class="column services-callouts" ng-repeat="product in result.products.services | filter: {period: selectPeriod, rate: selectRate}:true">
             <div class="container-hover" ng-click="createOrder(product.products[0].id)" >
                 <div class="container">
                     <h3 ng-bind="product.title"></h3>
