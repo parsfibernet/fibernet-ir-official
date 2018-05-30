@@ -12,23 +12,21 @@
             <div class="small-12 medium-3 columns">
                 <label>
                     <select ng-model="selectPeriod" >
-                            <option ng-click="selectPeriod = ''" value="">همه</option>
-                        <option ng-repeat="product in result.products.services | unique: 'period'" ng-value="product.period">{{ product.period }} ماهه</option>
+                        <option ng-repeat="product in result.services | unique: 'period'" ng-value="product.period">{{ product.period }} ماهه</option>
                     </select>
                 </label>
             </div>
             <div class="small-12 medium-3 end columns">
                 <label>
                     <select ng-model="selectRate">
-                        <option ng-click="selectRate = ''" value="">همه</option>
-                        <option ng-repeat="product in result.products.services | unique: 'rate'" ng-value="product.rate">{{ product.rate }} {{ product.rate_scale }}</option>
+                        <option ng-repeat="product in result.services | unique: 'rate'" ng-value="product.rate">{{ product.rate }} {{ product.rate_scale }}</option>
                     </select>
                 </label>
             </div>
     </div>
     <div class="row small-up-1 medium-up-3 products-container">
-        <div class="column services-callouts" ng-repeat="product in result.products.services | filter: {period: selectPeriod, rate: selectRate}:true">
-            <div class="container-hover" ng-click="createOrder(product.products[0].id)" >
+        <div class="column services-callouts" ng-repeat="product in result.services | filter: {period: selectPeriod, rate: selectRate}:true">
+            <div class="container-hover" ng-click="createOrder(product.id)" >
                 <div class="container">
                     <h3 ng-bind="product.title"></h3>
                     <p><small ng-bind="product.description"></small></p>

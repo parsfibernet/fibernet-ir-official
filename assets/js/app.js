@@ -16,7 +16,6 @@ $("#ios-btn").click(() => {
   $("#ios-btn").css("display", "none");
   $("#ios-loading").css("display", "block");
   var contactField = $( "#ios-contact" ).val();
-  console.log('contact: ', contactField);
   $.post( "https://getsimpleform.com/messages?form_api_token=7e18a0a7adda33f7f50e8fb90736fabb", { 'contact':  contactField} )
     .done(function(data){
       $("#ios-loading").css("display", "none");
@@ -53,7 +52,7 @@ app.config(function($routeProvider) {
 app.factory('httpRequestInterceptor',function () {
     return {
         request: function (config) {
-            config.headers['Authorization'] = 'Bearer Rr3R8QDjkqz5hZ1MZGE7aTqx0ajc7SmcKlr03Xxv';
+            config.headers['Authorization'] = 'Bearer TwUEDiti2yTqEEf95miSoCeExRuGuIZIil6F350M';
             return config;
         }
     };
@@ -76,8 +75,8 @@ app.controller('mainCtrl', ($scope, $http, $location, $rootScope, $routeParams) 
     $rootScope.$on('cfpLoadingBar:loaded', () => {
         $scope.disBtn = false;
     });
-    function getProducts(cid, pid, type, phone) {
-        let url = `https://core.fibernet.ir/2.0/web/products/city/${cid}/provider/${pid}/types/${type}?phone=${phone}`;
+    function getProducts(phone) {
+        let url = `https://stage.fibernet.ir/fast/products/${phone}`;
         return $http.get(url);
     }
     $scope.createOrder = (pid) => {
@@ -97,34 +96,23 @@ app.controller('mainCtrl', ($scope, $http, $location, $rootScope, $routeParams) 
         $http.post(url, data).then(
             (response) => {
                 $scope.order = response.data;
-                console.log($scope.order);
             },
             (error) => {
                 $scope.order = error.data;
-                console.log($scope.order);
             }
         );
     }
     $scope.routeParams = $routeParams;
-    $scope.checkStatus = () => {
-        if(typeof $scope.result == 'undefined')
-            // $location.path('/');
-            console.log('result undefined');
-    }
     $scope.initStatus = () => {
         $location.path('status');
     }
-    $scope.initVolume = () => {
+    $scope.initQuota = () => {
         $location.path('quota');
     }
     $scope.initService = () => {
         $location.path('service');
     }
-    $scope.clickTest = () => {
-        console.log('clickTest');
-    }
     $scope.fetchAllAvailableProducts = (phone, mobile) => {
-      console.log(typeof mobile);
       if(typeof mobile == 'undefined' || typeof phone == 'undefined'){
         $scope.showError = true;
         $scope.result = {};
@@ -132,25 +120,9 @@ app.controller('mainCtrl', ($scope, $http, $location, $rootScope, $routeParams) 
       } else {
         $scope.phone = phone;
         $scope.mobile = mobile;
-        var code = phone.toString().substring(0,2);
-        switch (code) {
-            case '11':
-                var city = 8;
-                var provider = 1;
-                break;
-            case '17':
-                var city = 1;
-                var provider = 3;
-                break;
-            case '83':
-                var city = 29;
-                var provider = 4;
-                break;
-        }
-        getProducts(city, provider, 'ADSL', phone).then(
+        getProducts(phone).then(
             (response) => {
                 $scope.result = response.data;
-                console.log($scope.result);
                 $location.path('status');
             },
             (error) => {

@@ -2,15 +2,24 @@
     <div class="card-section">
         <h2>اطلاعات حساب اینترنت</h2>
         <ul class="menu vertical">
-            <li>شماره تلفن: <strong ng-bind="result.products.account.adsltel"></strong></li>
-            <li>حجم باقی‌مانده: <strong ng-bind="result.products.account.remaincredit + result.products.account.deposit | number"></strong> مگابایت</li>
-            <li>زمان باقی‌مانده: <strong ng-bind="result.products.account.remaindays"></strong> روز</li>    
+            <li>شماره تلفن: <strong ng-bind="result.current.phone"></strong></li>
+            <li>حجم باقی‌مانده: <strong ng-bind="result.current.quota | number"></strong> مگابایت</li>
+            <li>زمان باقی‌مانده: <strong ng-bind="result.current.remainingDays"></strong> روز</li>    
         </ul>
-        <p>سرویس فعلی: <strong ng-bind="result.products.account.servicename"></strong>.</p>
+        <p>سرویس فعلی: <strong ng-bind="result.current.description"></strong>.</p>
+
+        <div class="callout alert" ng-show="result.quotaErrorMessage" >
+            <p><small>{{ result.quotaErrorMessage }}</small></p>
+        </div>
+
+        <div class="callout alert" ng-show="result.serviceErrorMessage" >
+            <p><small>{{ result.serviceErrorMessage }}</small></p>
+        </div>
+
         <div class="row columns">
             <ul class="menu sections">
-                <li><a class="changeStateBtn" ng-click="initService()" >تمدید یا تغییر سرویس</a></li>
-                <li><a class="changeStateBtn" ng-click="initVolume()" >خرید حجم</a></li>
+                <li ng-show="!result.serviceErrorMessage" ><a class="changeStateBtn" ng-click="initService()" >تمدید یا تغییر سرویس</a></li>
+                <li ng-show="!result.quotaErrorMessage" ><a class="changeStateBtn" ng-click="initQuota()" >خرید حجم</a></li>
             </ul>
         </div>
     </div>

@@ -28,7 +28,7 @@
                 </div>
                 <div class="small-12 columns" ng-show="showError" >
                     <div class="callout alert">
-                        <p><small>اوه! {{ result.message }}</small></p>
+                        <p ng-repeat="error in result"><small>اوه! {{ error.title }}</small></p>
                     </div>
                 </div>
                 <div style="margin-top: 34px" class="small-5 columns small-centered text-center">
