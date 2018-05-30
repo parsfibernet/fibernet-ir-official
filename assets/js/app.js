@@ -44,8 +44,8 @@ app.config(function($routeProvider) {
     .when("/callback", {
       templateUrl : "../partials/callback.html"
     })
-    .when("/volume", {
-      templateUrl : "../partials/volume.html"
+    .when("/quota", {
+      templateUrl : "../partials/quota.html"
     });
   });
 // Bind Access Token
@@ -115,7 +115,7 @@ app.controller('mainCtrl', ($scope, $http, $location, $rootScope, $routeParams) 
         $location.path('status');
     }
     $scope.initVolume = () => {
-        $location.path('volume');
+        $location.path('quota');
     }
     $scope.initService = () => {
         $location.path('service');
