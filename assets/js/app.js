@@ -83,7 +83,7 @@ app.controller('mainCtrl', ($scope, $http, $location, $rootScope, $routeParams) 
         var popup = new Foundation.Reveal($('#recipe'));
         popup.open();
         $scope.pid = pid;
-        let url = 'https://core.fibernet.ir/2.0/web/orders/withGateway';
+        let url = 'https://stage.fibernet.ir/2.0/web/orders/withGateway';
         let data = {};
         data.mobile = $scope.mobile;
         data.rows = [
