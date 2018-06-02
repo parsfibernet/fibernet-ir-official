@@ -10,7 +10,7 @@
     </div>
     
     <div class="row small-up-1 medium-up-3 products-container">
-        <div class="column services-callouts" ng-repeat="product in result.quotas">
+        <div class="column services-callouts" ng-repeat="product in result.quotas | orderBy:'price'">
             <div class="container-hover" ng-click="createOrder(product.id)" >
                 <div class="container">
                     <h3 ng-bind="product.title"></h3>
