@@ -19,7 +19,7 @@
             <div class="small-12 medium-3 end columns">
                 <label>
                     <select ng-model="selectRate">
-                        <option ng-repeat="product in result.services | unique: 'rate'" ng-value="product.rate">{{ product.rate }} {{ product.rate_scale }}</option>
+                        <option ng-repeat="product in result.services | unique: 'rate'" ng-value="product.rate">{{ product.rate | humanRate }}</option>
                     </select>
                 </label>
             </div>

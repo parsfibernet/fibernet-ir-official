@@ -61,6 +61,21 @@ app.config(function ($httpProvider) {
     $httpProvider.interceptors.push('httpRequestInterceptor');
 })
 
+// Add humanRate filter
+// --------------------
+app.filter('humanRate', function() {
+    return function(input) {
+        var out = "";
+        if(input < 1024) {
+            out = "512 کیلوبیت";
+        } else {
+            out = input/1024 + " مگابیت";
+        }
+      return out;
+    };
+  })
+
+
 // Main Controller
 // ---------------
 app.controller('mainCtrl', ($scope, $http, $location, $rootScope, $routeParams) => {
