@@ -115,8 +115,10 @@ app.controller('mainCtrl', ($scope, $http, $location, $rootScope, $routeParams) 
     $scope.fetchAllAvailableProducts = (phone, mobile) => {
       if(typeof mobile == 'undefined' || typeof phone == 'undefined'){
         $scope.showError = true;
-        $scope.result = {};
-        $scope.result.message = 'لطفاً شماره تلفن و موبایل را وارد کنید.';
+        $scope.result = [];
+        var res = {};
+        res.title = 'لطفاً شماره تلفن و موبایل را وارد کنید.';
+        $scope.result.push(res);
       } else {
         $scope.phone = phone;
         $scope.mobile = mobile;
