@@ -16,7 +16,7 @@ date: 2017-03-22
                             <a onclick="trackOutboundLink('https://play.google.com/store/apps/details?id=ir.fibernet.fiberman', 'google-play'); return false;" href="https://play.google.com/store/apps/details?id=ir.fibernet.fiberman"><img src="{{ "/assets/img/google-play.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
                         </div>
                         <div class="column column-block">
-                            <a data-open="reminder" ><img src="{{ "/assets/img/app-store.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
+                            <a onclick="trackOutboundLink('https://new.sibapp.com/applications/fibernet', 'sib-app'); return false;" href="https://new.sibapp.com/applications/fibernet" ><img src="{{ "/assets/img/sib-app.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
                         </div>
                         <div class="column column-block">
                             <a onclick="trackOutboundLink('http://fibernet.ir/assets/apk/fibernet_v4.2.1_157.apk', 'direct-link'); return false;" href="{{ "/assets/apk/fibernet_v4.2.1_157.apk" | prepend: site.baseurl }}" ><img src="{{ "/assets/img/direct-link.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
@@ -44,7 +44,7 @@ date: 2017-03-22
                             <a onclick="trackOutboundLink('https://play.google.com/store/apps/details?id=ir.fibernet.fiberman', 'google-play'); return false;" href="https://play.google.com/store/apps/details?id=ir.fibernet.fiberman"><img src="{{ "/assets/img/google-play.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
                         </div>
                         <div class="column column-block">
-                            <a data-open="reminder" ><img src="{{ "/assets/img/app-store.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
+                            <a onclick="trackOutboundLink('https://new.sibapp.com/applications/fibernet', 'sib-app'); return false;" href="https://new.sibapp.com/applications/fibernet" ><img src="{{ "/assets/img/sib-app.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
                         </div>
                         <div class="column column-block">
                             <a onclick="trackOutboundLink('http://fibernet.ir/assets/apk/fibernet_v4.2.1_157.apk', 'direct-link'); return false;" href="{{ "/assets/apk/fibernet_v4.2.1_157.apk" | prepend: site.baseurl }}" ><img src="{{ "/assets/img/direct-link.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
