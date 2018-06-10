@@ -52,7 +52,7 @@ app.config(function($routeProvider) {
 app.factory('httpRequestInterceptor',function () {
     return {
         request: function (config) {
-            config.headers['Authorization'] = 'Bearer TwUEDiti2yTqEEf95miSoCeExRuGuIZIil6F350M';
+            config.headers['Authorization'] = 'Bearer XPTcfDHnrf72eCROEwzOsLigC5D3AD4EuwfwC5cf';
             return config;
         }
     };
@@ -91,14 +91,14 @@ app.controller('mainCtrl', ($scope, $http, $location, $rootScope, $routeParams) 
         $scope.disBtn = false;
     });
     function getProducts(phone) {
-        let url = `https://stage.fibernet.ir/fast/products/${phone}`;
+        let url = `https://core.fibernet.ir/fast/products/${phone}`;
         return $http.get(url);
     }
     $scope.createOrder = (pid) => {
         var popup = new Foundation.Reveal($('#recipe'));
         popup.open();
         $scope.pid = pid;
-        let url = 'https://stage.fibernet.ir/2.0/web/orders/withGateway';
+        let url = 'https://core.fibernet.ir/2.0/web/orders/withGateway';
         let data = {};
         data.mobile = $scope.mobile;
         data.rows = [
