@@ -140,6 +140,7 @@ app.controller('mainCtrl', ($scope, $http, $location, $rootScope, $routeParams) 
         getProducts(phone).then(
             (response) => {
                 $scope.result = response.data;
+                $scope.result.services = $scope.result.services.filter((service) => { return service.rate > 512 });
                 $location.path('status');
             },
             (error) => {
