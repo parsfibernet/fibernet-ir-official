@@ -29,6 +29,7 @@
     </div>
     <div class="reveal-content" ng-hide="disBtn">
         <h2>صورت‌حساب شماره {{ order.id }}</h2>
+        <p>{{order.description}}</p>
         <ul class="vertical menu">
             <li>قیمت محصول: <strong ng-bind="order.total_amount | currency : '' : 0"></strong> ریال</li>
             <li>مالیات: <strong ng-bind="order.tax | currency : '' : 0"></strong> ریال</li>

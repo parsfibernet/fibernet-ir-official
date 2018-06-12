@@ -12,17 +12,23 @@
             <div class="small-12 medium-3 columns">
                 <label>
                     <select ng-model="selectPeriod" >
-                        <option ng-repeat="product in result.services | unique: 'period'" ng-value="product.period">{{ product.period }} ماهه</option>
+                        <option ng-repeat="product in result.services  | unique: 'period'" ng-value="product.period">{{ product.period }} ماهه</option>
                     </select>
                 </label>
             </div>
             <div class="small-12 medium-3 end columns">
                 <label>
                     <select ng-model="selectRate">
-                        <option ng-repeat="product in result.services | unique: 'rate'" ng-value="product.rate">{{ product.rate | humanRate }}</option>
+                        <option ng-repeat="product in result.services | orderBy:'price' | unique: 'rate'" ng-value="product.rate">{{ product.rate | humanRate }}</option>
                     </select>
                 </label>
             </div>
+    </div>
+    <div data-closable class="row callout alert-callout-border primary">
+        <strong>توجه</strong> - لطفا در انتخاب سرویس بسیار دقت کنید، زیرا پس از خرید و فعال‌سازی قابل تغییر نمی‌باشد.
+        <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+        </button>
     </div>
     <div class="row small-up-1 medium-up-3 products-container">
         <div class="column services-callouts" ng-repeat="product in result.services  | orderBy:'price' | filter: {period: selectPeriod, rate: selectRate}:true">
@@ -44,6 +50,7 @@
     </div>
     <div class="reveal-content" ng-hide="disBtn">
         <h2>صورت‌حساب شماره {{ order.id }}</h2>
+        <p>{{order.description}}</p>
         <ul class="vertical menu">
             <li>قیمت محصول: <strong ng-bind="order.total_amount | currency : '' : 0"></strong> ریال</li>
             <li>مالیات: <strong ng-bind="order.tax | currency : '' : 0"></strong> ریال</li>
