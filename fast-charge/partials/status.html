@@ -2,7 +2,7 @@
     <div class="card-section">
         <h2>اطلاعات حساب اینترنت</h2>
         <ul class="menu vertical">
-            <li>شماره تلفن: <strong ng-bind="result.current.phone"></strong></li>
+            <li>شماره تلفن: <strong ng-bind="result.current.phone"></strong> <span ng-if="result.willAssignAsAgent" class="badge success"> جدید </span></li>
             <li>حجم باقی‌مانده: <strong ng-bind="result.current.quota | number"></strong> مگابایت</li>
             <li>زمان باقی‌مانده: <strong ng-bind="result.current.remainingDays"></strong> روز</li>    
         </ul>
