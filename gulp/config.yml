@@ -86,14 +86,14 @@ javascript:
     - "node_modules/foundation-sites/dist/js/plugins/foundation.magellan.js"
     - "node_modules/foundation-sites/dist/js/plugins/foundation.offcanvas.js"
     - "node_modules/foundation-sites/dist/js/plugins/foundation.orbit.js"
-    - "node_modules/foundation-sites/dist/js/plugins/foundation.responsiveAccordionTabs.js"
+    # - "node_modules/foundation-sites/dist/js/plugins/foundation.responsiveAccordionTabs.js"
     - "node_modules/foundation-sites/dist/js/plugins/foundation.responsiveMenu.js"
     - "node_modules/foundation-sites/dist/js/plugins/foundation.responsiveToggle.js"
     - "node_modules/foundation-sites/dist/js/plugins/foundation.reveal.js"
     - "node_modules/foundation-sites/dist/js/plugins/foundation.slider.js"
     - "node_modules/foundation-sites/dist/js/plugins/foundation.tabs.js"
     - "node_modules/foundation-sites/dist/js/plugins/foundation.tooltip.js"
-    - "node_modules/foundation-sites/dist/js/plugins/foundation.zf.responsiveAccordionTabs.js"
+    # - "node_modules/foundation-sites/dist/js/plugins/foundation.zf.responsiveAccordionTabs.js"
 
     # AngularJS
     - "node_modules/angular/angular.js"
