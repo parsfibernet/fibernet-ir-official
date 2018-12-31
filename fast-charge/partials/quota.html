@@ -9,6 +9,13 @@
         </div>
     </div>
     
+    <div ng-if="result.current.remainingDaysAlertLimit >= result.current.remainingDays" data-closable class="row callout alert-callout-border alert">
+        <strong>توجه</strong> - سرویس فعلی شما تنها <span ng-init="result.current.remainingDays"></span> روز اعتبار دارد.
+        <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
     <div class="row small-up-1 medium-up-3 products-container">
         <div class="column services-callouts" ng-repeat="product in result.quotas | orderBy:'price'">
             <div class="container-hover" ng-click="createOrder(product.id)" >
