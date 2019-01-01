@@ -12,14 +12,14 @@
             <div class="small-12 medium-3 columns">
                 <label>
                     <select ng-model="selectPeriod" >
-                        <option ng-repeat="product in result.services  | unique: 'period'" ng-value="product.period">{{ product.period }} ماهه</option>
+                        <option ng-repeat="product in result.services  | unique: 'period' | orderBy:'period'" ng-value="product.period">{{ product.period }} ماهه</option>
                     </select>
                 </label>
             </div>
             <div class="small-12 medium-3 end columns">
                 <label>
                     <select ng-model="selectRate">
-                        <option ng-repeat="product in result.services | orderBy:'price' | unique: 'rate'" ng-value="product.rate">{{ product.rate | humanRate }}</option>
+                        <option ng-repeat="product in result.services | orderBy:'price' | unique: 'rate' | orderBy:'rate'" ng-value="product.rate">{{ product.rate | humanRate }}</option>
                     </select>
                 </label>
             </div>
