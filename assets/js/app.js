@@ -2,25 +2,55 @@
 // --------------------------------------------------
 // APP.JS
 // --------------------------------------------------
-$(document).foundation();
-//
 // Initialize Foundation
 // --------------------------------------------------
 
-// $(document).foundation();
+Foundation.Abide.defaults.patterns['jalaliDate'] = /^(?:13)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))$/;
+Foundation.Abide.defaults.patterns['tenDigits'] = /^\d{10}$/;
+Foundation.Abide.defaults.patterns['mobileNumber'] = /^09(1|2|3|9)\d{8}$/;
+Foundation.Abide.defaults.patterns['adslNumber'] = /^(11|83)?\d{8}$/;
+Foundation.Abide.defaults.patterns['farsiAlpha'] = /[پچجحخهعغفقثصضشسیبلاتنمکگوئدذرزطظژؤإأءًٌٍَُِّ\s]$/;
+Foundation.Abide.defaults.patterns['farsiAlphaMinFive'] = /[پچجحخهعغفقثصضشسیبلاتنمکگوئدذرزطظژؤإأءًٌٍَُِّ\s]{5,}$/;
+Foundation.Abide.defaults.patterns['any3-10'] = /.{10,100}$/;
 
+
+$(document).foundation();
 //
 // Custom JS
 // --------------------------------------------------
-$("#ios-btn").click(() => {
-  $("#ios-btn").css("display", "none");
-  $("#ios-loading").css("display", "block");
-  var contactField = $( "#ios-contact" ).val();
-  $.post( "https://getsimpleform.com/messages?form_api_token=7e18a0a7adda33f7f50e8fb90736fabb", { 'contact':  contactField} )
-    .done(function(data){
-      $("#ios-loading").css("display", "none");
-      $("#ios-done").css("display", "block");
+// $("#ios-btn").click(() => {
+//   $("#ios-btn").css("display", "none");
+//   $("#ios-loading").css("display", "block");
+//   var contactField = $( "#ios-contact" ).val();
+//   $.post( "https://getsimpleform.com/messages?form_api_token=7e18a0a7adda33f7f50e8fb90736fabb", { 'contact':  contactField} )
+//     .done(function(data){
+//       $("#ios-loading").css("display", "none");
+//       $("#ios-done").css("display", "block");
+//     });
+// });
+
+$("#shahkar").on("formvalid.zf.abide", function(ev,frm) {
+    ev.preventDefault();
+    console.log("Valid Submit");
+    $("#formWrapper").addClass('hidden');
+    $("#submitWrapper").removeClass('hidden');
+    var data = {};
+    $("#shahkar").serializeArray().map(function (item) {
+        data = Object.assign({[item.name]: item.value}, data);
     });
+    $.post("http://shahkar.fibernet.ir/customer", data)
+    .done(function(data){
+        $("#resultWrapper").removeClass('hidden');
+        $("#submitWrapper").addClass('hidden');
+    })
+    .fail(function(error) {
+        $("#formWrapper").removeClass('hidden');
+        $("#submitWrapper").addClass('hidden');
+    })
+});
+
+$("#shahkar").on("submit", function(ev,frm) {
+    ev.preventDefault();
 });
 //
 // Angular App
