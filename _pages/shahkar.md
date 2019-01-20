@@ -12,7 +12,7 @@ sitemap: false
 </div>
 <div id="resultWrapper" class="hidden" >
     <div data-closable class="row callout alert-callout-border success">
-        <strong>تبریک.</strong> مشترک عزیز اطلاعات شما جهت بروزرسانی و احراز هویت   توسط اپراتورهای ما تا ساعاتی دیگر در سامانه مخابرات ثبت خواهد شد. پس از آن و در صورت صحیح بودن اطلاعات، امکان خريد ترافيک و تمديد سرويس از فایبرنت در دسترس شما خواهد بود.
+        مشترک عزیز اطلاعات شما جهت بروزرسانی و احراز هویت   توسط اپراتورهای ما تا ساعاتی دیگر در سامانه مخابرات ثبت خواهد شد. پس از آن و در صورت صحیح بودن اطلاعات، امکان خريد ترافيک و تمديد سرويس از فایبرنت در دسترس شما خواهد بود.
         از صبوری و همراهی شما سپاسگزاریم.
     </div>
     <h3><a class="button" href="/">« بازگشت به صفحه اصلی</a></h3>
@@ -148,7 +148,7 @@ sitemap: false
     </div>
     <div class="small-12 medium-3 columns">
         <label>نام مالک خط
-            <input name="landlineOwner" type="text" aria-describedby="landlineOwnerHint" aria-errormessage="landlineOwnerError" pattern="farsiAlphaMinFive" >
+            <input name="landlineOwner" type="text" aria-describedby="landlineOwnerHint" aria-errormessage="landlineOwnerError" required pattern="farsiAlphaMinFive" >
             <span class="form-error" id="landlineOwnerError">
                 نام و نام خانوادگی مالک خط را با حروف فارسی و حداقل در ۵ کاراکتر وارد کنید.
             </span>
