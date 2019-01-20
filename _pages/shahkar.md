@@ -4,6 +4,7 @@ layout: page
 title: فرم ثبت مشخصات فردی
 date: 2019-01-16
 isHome: false
+sitemap: false
 ---
 <div id="submitWrapper" class="hidden" >
     <h4 class="text-center">در حال ارسال اطلاعات...</h4>
