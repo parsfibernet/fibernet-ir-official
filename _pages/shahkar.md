@@ -27,6 +27,18 @@ sitemap: false
         <strong>توجه</strong> - امکان ثبت اطلاعات وجود ندارد. لطفا به خطاهای ذکر شده توجه کنید.
 </div>
 <div class="row">
+    <div class="medium-12 columns">
+        <div class="row">
+            <div class="columns small-12 medium-6 medium-centered">
+                <label>شماره خط اینترنت
+                    <input name="adslNumber" placeholder="برای مثال : 1122233344" type="text" aria-describedby="adslNumberHint" aria-errormessage="adslNumberError" required pattern="adslNumber" >
+                    <span class="form-error" id="adslNumberError">
+                    شماره خط اینترنت را با ارقام انگلیسی و با پیش شماره استان بدون صفر وارد کنید.
+                    </span>
+                </label>
+            </div>
+        </div>
+    </div>
     <div class="small-12 medium-3 columns">
         <label>نام
             <input name="firstName" type="text" aria-describedby="firstNameHint" aria-errormessage="firstNameError" required pattern="farsiAlpha" >
@@ -120,7 +132,7 @@ sitemap: false
     </div>
     <div class="small-12 medium-3 columns">
         <label>مدرک تحصیلی
-            <select id="education" name="education" >
+            <select id="education" name="education" aria-describedby="educationHint" aria-errormessage="educationError" required >
                 <option></option>
                 <option value="زیر دیپلم">زیر دیپلم</option>
                 <option value="دیپلم">دیپلم</option>
@@ -129,6 +141,9 @@ sitemap: false
                 <option value="کارشناسی ارشد">کارشناسی ارشد</option>
                 <option value="دکتری">دکتری</option>
             </select>
+            <span class="form-error" id="educationError">
+                مشخص کردن مدرک تحصیلی الزامی است.
+            </span>
         </label>
     </div>
     <div class="small-12 medium-3 columns">
@@ -141,25 +156,17 @@ sitemap: false
     </div>
     <div class="small-12 medium-3 columns">
         <label>کد پستی
-            <input name="postalCode" type="text" aria-describedby="postalCodeHint" aria-errormessage="postalCodeError" pattern="tenDigits" >
+            <input name="postalCode" type="text" aria-describedby="postalCodeHint" aria-errormessage="postalCodeError" required pattern="tenDigits" >
             <span class="form-error" id="postalCodeError">
                  کد پستی را با ارقام انگلیسی و در ۱۰ رقم وارد کنید.
             </span>
         </label>
     </div>
-    <div class="small-12 medium-6 columns">
+    <div class="small-12 medium-9 columns">
         <label>نشانی منزل
-            <input name="address" type="text" aria-describedby="addressHint" aria-errormessage="addressError" minlength="10" pattern="any3-10" >
+            <input name="address" type="text" aria-describedby="addressHint" aria-errormessage="addressError" required pattern="any3-10" >
             <span class="form-error" id="addressError">
                  نشانی منزل باید حداقل ۱۰ و حداکثر ۱۰۰ کاراکتر باشد.
-            </span>
-        </label>
-    </div>
-    <div class="small-12 medium-3 columns">
-        <label>شماره خط اینترنت
-            <input name="adslNumber" placeholder="برای مثال : 1122233344" type="text" aria-describedby="adslNumberHint" aria-errormessage="adslNumberError" required pattern="adslNumber" >
-            <span class="form-error" id="adslNumberError">
-                شماره خط اینترنت را با ارقام انگلیسی و با پیش شماره استان بدون صفر وارد کنید.
             </span>
         </label>
     </div>

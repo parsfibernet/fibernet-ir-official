@@ -38,7 +38,7 @@ $("#shahkar").on("formvalid.zf.abide", function(ev,frm) {
     $("#shahkar").serializeArray().map(function (item) {
         data[item.name] = item.value;
     });
-    $.post("http://shahkar.fibernet.ir/customer", data)
+    $.post("https://shahkar.fibernet.ir/customer", data)
     .done(function(data){
         $("#resultWrapper").removeClass('hidden');
         $("#submitWrapper").addClass('hidden');
