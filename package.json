@@ -5,6 +5,7 @@
   "license": "MIT",
   "main": "gulpfile.js",
   "dependencies": {
+    "angular-sanitize": "^1.7.6",
     "motion-ui": "^1.2.3"
   },
   "devDependencies": {

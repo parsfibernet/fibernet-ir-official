@@ -49,13 +49,23 @@ $("#shahkar").on("formvalid.zf.abide", function(ev,frm) {
     })
 });
 
+function setLandLineIntoField(){
+    var url = new URL(window.location.href);
+    var land_line = url.searchParams.get("tel");
+    if(land_line !== null){
+        $('input[name=adslNumber]').val(land_line);
+        $('input[name=adslNumber]').prop('readonly', true);
+    }
+}
+setLandLineIntoField();
+
 $("#shahkar").on("submit", function(ev,frm) {
     ev.preventDefault();
 });
 //
 // Angular App
 // --------------------------------------------------
-var app = angular.module('fast-charge', ['ngRoute', 'angular-loading-bar', 'angular.filter', 'ngMessages']);
+var app = angular.module('fast-charge', ['ngRoute', 'angular-loading-bar', 'angular.filter', 'ngMessages', 'ngSanitize']);
 
 // Angular Routing
 // ---------------
@@ -121,7 +131,7 @@ app.controller('mainCtrl', ($scope, $http, $location, $rootScope, $routeParams) 
         $scope.disBtn = false;
     });
     function getProducts(phone) {
-        let url = `https://core.fibernet.ir/fast/products/${phone}`;
+        let url = `https://stage.fibernet.ir/fast/products/${phone}`;
         return $http.get(url);
     }
     $scope.createOrder = (pid) => {
