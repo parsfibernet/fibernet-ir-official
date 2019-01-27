@@ -19,7 +19,7 @@ date: 2017-03-22
                             <a onclick="trackOutboundLink('https://new.sibapp.com/applications/fibernet', 'sib-app'); return false;" href="https://new.sibapp.com/applications/fibernet" ><img src="{{ "/assets/img/sib-app.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
                         </div>
                         <div class="column column-block">
-                            <a onclick="trackOutboundLink('http://fibernet.ir/assets/apk/fibernet_v4.4.0_162.apk', 'direct-link'); return false;" href="{{ "/assets/apk/fibernet_v4.4.0_162.apk" | prepend: site.baseurl }}" ><img src="{{ "/assets/img/direct-link.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
+                            <a onclick="trackOutboundLink('http://fibernet.ir/assets/apk/fibernet_v4.4.2_163.apk', 'direct-link'); return false;" href="{{ "/assets/apk/fibernet_v4.4.2_163.apk" | prepend: site.baseurl }}" ><img src="{{ "/assets/img/direct-link.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
                         </div>
                         <div class="column column-block">
                             <a onclick="trackOutboundLink('https://cafebazaar.ir/app/ir.fibernet.fiberman/', 'cafe-bazaar'); return false;" href="https://cafebazaar.ir/app/ir.fibernet.fiberman/"><img src="{{ "/assets/img/bazaar.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
@@ -47,7 +47,7 @@ date: 2017-03-22
                             <a onclick="trackOutboundLink('https://new.sibapp.com/applications/fibernet', 'sib-app'); return false;" href="https://new.sibapp.com/applications/fibernet" ><img src="{{ "/assets/img/sib-app.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
                         </div>
                         <div class="column column-block">
-                            <a onclick="trackOutboundLink('http://fibernet.ir/assets/apk/fibernet_v4.4.0_162.apk', 'direct-link'); return false;" href="{{ "/assets/apk/fibernet_v4.4.0_162.apk" | prepend: site.baseurl }}" ><img src="{{ "/assets/img/direct-link.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
+                            <a onclick="trackOutboundLink('http://fibernet.ir/assets/apk/fibernet_v4.4.2_163.apk', 'direct-link'); return false;" href="{{ "/assets/apk/fibernet_v4.4.2_163.apk" | prepend: site.baseurl }}" ><img src="{{ "/assets/img/direct-link.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
                         </div>
                         <div class="column column-block">
                             <a onclick="trackOutboundLink('https://cafebazaar.ir/app/ir.fibernet.fiberman/', 'cafe-bazaar'); return false;" href="https://cafebazaar.ir/app/ir.fibernet.fiberman/"><img src="{{ "/assets/img/bazaar.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
