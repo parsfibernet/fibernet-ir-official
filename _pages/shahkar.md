@@ -31,9 +31,9 @@ sitemap: false
         <div class="row">
             <div class="columns small-12 medium-6 medium-centered">
                 <label>شماره خط اینترنت
-                    <input name="adslNumber" placeholder="برای مثال : 1122233344" type="text" aria-describedby="adslNumberHint" aria-errormessage="adslNumberError" required pattern="adslNumber" >
-                    <span class="form-error" id="adslNumberError">
-                    شماره خط اینترنت را با ارقام انگلیسی و با پیش شماره استان بدون صفر وارد کنید.
+                    <input name="adslNumber" placeholder="برای مثال : 1122233344" type="number" aria-describedby="adslNumberHint" aria-errormessage="adslNumberError" required pattern="adslNumber" >
+                    <span class="form-error">
+                    شماره خط اینترنت را با صفحه کلید انگلیسی و با پیش شماره استان بدون صفر وارد کنید.
                     </span>
                 </label>
             </div>
@@ -90,7 +90,7 @@ sitemap: false
     </div>
     <div class="small-12 medium-3 columns">
         <label>کدملی
-            <input name="nationalCode" type="text" aria-describedby="nationalCodeHint" aria-errormessage="nationalCodeError" required pattern="tenDigits" >
+            <input name="nationalCode" type="number" aria-describedby="nationalCodeHint" aria-errormessage="nationalCodeError" required pattern="tenDigits" >
             <span class="form-error" id="nationalCodeError">
                 کد ملی باید با اعداد انگلیسی و ۱۰ رقم وارد شود.
             </span>
@@ -98,7 +98,7 @@ sitemap: false
     </div>
     <div class="small-12 medium-3 columns">
         <label>شماره شناسنامه
-            <input name="idNumber" type="text" aria-describedby="idNumberHint" aria-errormessage="idNumberError" required pattern="number" >
+            <input name="idNumber" type="number" aria-describedby="idNumberHint" aria-errormessage="idNumberError" required pattern="number" >
             <span class="form-error" id="idNumberError">
                 شماره شناسنامه باید با اعداد انگلیسی و نهایتا ۱۰ رقم باشد.
             </span>
@@ -108,16 +108,16 @@ sitemap: false
         <label>زادروز
             <input name="dateOfBirth" type="text" aria-describedby="dateOfBirthHint" aria-errormessage="dateOfBirthError" required pattern="jalaliDate" placeholder="1360-01-01" >
             <span class="form-error" id="dateOfBirthError">
-                زادروز را با ارقام انگلیسی و با فرمت ۰۱-۰۱-۱۳۶۰ وارد کنید.
+                زادروز را با صفحه کلید انگلیسی و با فرمت ۰۱-۰۱-۱۳۶۰ وارد کنید.
             </span>
         <p class="help-text" id="passwordHelpText">لازم است مشترک دارای سن ۱۸ سال  به بالا باشد.</p>
         </label>
     </div>
     <div class="small-12 medium-3 columns">
         <label>شماره همراه
-            <input name="mobile" type="text" placeholder="برای مثال : 09112223344" aria-describedby="mobileHint" aria-errormessage="mobileError" required pattern="mobileNumber" >
+            <input name="mobile" type="number" placeholder="برای مثال : 09112223344" aria-describedby="mobileHint" aria-errormessage="mobileError" required pattern="mobileNumber" >
             <span class="form-error" id="mobileError">
-                شماره همراه را با ارقام انگلیسی و با فرمت صحیح وارد کنید.
+                شماره همراه را با صفحه کلید انگلیسی و با فرمت صحیح وارد کنید.
             </span>
         </label>
         <p class="help-text" id="passwordHelpText">پيام هاي اطلاع رساني سازمان به اين موبايل ارسال خواهد شد</p>
@@ -156,9 +156,9 @@ sitemap: false
     </div>
     <div class="small-12 medium-3 columns">
         <label>کد پستی
-            <input name="postalCode" type="text" aria-describedby="postalCodeHint" aria-errormessage="postalCodeError" required pattern="tenDigits" >
+            <input name="postalCode" type="number" aria-describedby="postalCodeHint" aria-errormessage="postalCodeError" required pattern="tenDigits" >
             <span class="form-error" id="postalCodeError">
-                 کد پستی را با ارقام انگلیسی و در ۱۰ رقم وارد کنید.
+                 کد پستی را با صفحه کلید انگلیسی و در ۱۰ رقم وارد کنید.
             </span>
         </label>
     </div>
