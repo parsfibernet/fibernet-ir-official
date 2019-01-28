@@ -58,15 +58,9 @@
         </ul>
         <p>مبلغ قابل پرداخت: <strong ng-bind="order.payable_amount | currency : '' : 0"></strong> ریال</p>
         <p><small>موافقت‌نامه <a href="/terms">استفاده از خدمات</a> و <a href="/terms">قوانین</a> را خوانده و پذیرفته‌ام.</small></p>
-        <form method="post" action="https://sep.shaparak.ir/Payment.aspx">
-            <input type="hidden" aria-label="amount" value="{{order.gateway.data.Amount}}" name="Amount">
-            <input type="hidden" aria-label="mid" value="{{order.gateway.data.MID}}" name="MID">
-            <input type="hidden" aria-label="redirect" value="{{order.gateway.data.RedirectURL}}" name="RedirectURL">
-            <input type="hidden" aria-label="resnum" value="{{order.gateway.data.ResNum}}" name="ResNum">
-            <div class="text-center">
-                <input type="submit" class="alert button" ng-disabled="disBtn" value="پرداخت با کارت شتاب" >
-            </div>
-        </form>
+        <div class="text-center">
+            <a href="{{order.checkout}}" class="alert button" ng-disabled="disBtn" >پرداخت با کارت شتاب</a>
+        </div>
     </div>
     <button class="close-button" data-close aria-label="Close modal" type="button">
         <span aria-hidden="true">&times;</span>
