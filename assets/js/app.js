@@ -15,19 +15,6 @@ Foundation.Abide.defaults.patterns['any3-10'] = /.{10,100}$/;
 
 
 $(document).foundation();
-//
-// Custom JS
-// --------------------------------------------------
-// $("#ios-btn").click(() => {
-//   $("#ios-btn").css("display", "none");
-//   $("#ios-loading").css("display", "block");
-//   var contactField = $( "#ios-contact" ).val();
-//   $.post( "https://getsimpleform.com/messages?form_api_token=7e18a0a7adda33f7f50e8fb90736fabb", { 'contact':  contactField} )
-//     .done(function(data){
-//       $("#ios-loading").css("display", "none");
-//       $("#ios-done").css("display", "block");
-//     });
-// });
 
 $("#shahkar").on("formvalid.zf.abide", function(ev,frm) {
     ev.preventDefault();
@@ -49,6 +36,27 @@ $("#shahkar").on("formvalid.zf.abide", function(ev,frm) {
     })
 });
 
+$("#affiliate").on("formvalid.zf.abide", function(ev,frm) {
+    ev.preventDefault();
+    console.log("Valid Submit");
+    $("#formWrapper").addClass('hidden');
+    $("#submitWrapper").removeClass('hidden');
+    var data = {};
+    $("#affiliate").serializeArray().map(function (item) {
+        data[item.name] = item.value;
+    });
+    console.log(data);
+    $.post("https://shahkar.fibernet.ir/affiliate", data)
+    .done(function(data){
+        $("#resultWrapper").removeClass('hidden');
+        $("#submitWrapper").addClass('hidden');
+    })
+    .fail(function(error) {
+        $("#formWrapper").removeClass('hidden');
+        $("#submitWrapper").addClass('hidden');
+    })
+});
+
 function setLandLineIntoField(){
     var url = new URL(window.location.href);
     var land_line = url.searchParams.get("tel");
@@ -60,6 +68,9 @@ function setLandLineIntoField(){
 setLandLineIntoField();
 
 $("#shahkar").on("submit", function(ev,frm) {
+    ev.preventDefault();
+});
+$("#affiliate").on("submit", function(ev,frm) {
     ev.preventDefault();
 });
 //
