@@ -18,10 +18,18 @@ sitemap: true
 </div>
 <div id="formWrapper">
 <p>فایبرنت یک راهکار جذاب برای شما دارد.</p>
-<p>کافیست برای مشترکی که تا به امروز از هیچ‌کدام از خدمات فایبرنت خرید نداشته است از طریق صفحه <a href="http://fibernet.ir/fast-charge" >وب‌سایت فایبرنت بخش شارژ سریع</a> با شماره موبایل خودتان (که در فرم زیر معرفی می‌کنید) خریدی انجام دهید و سپس اپلیکیشن فایبرنت را برای مشترک نصب و طریقه‌ی خرید را به وی آموزش دهید.</p>
-<p>از آن پس فایبرنت ۳ درصد از فروش هر سرویسی که آن مشترک خریداری می‌کند را به عنوان پورسانت به شما می‌پردازد.</p>
-<p>لازم به ذکر است که <strong> در این طرح فقط یکبار مشترک به شما مراجعه می‌کند</strong> و در دفعات بعدی بدون مراجعه به شما از اپلیکیشن خرید را انجام می‌دهد ولیکن شما پورسانت خود را مادامیکه مشترک از اپلیکیشن خرید می‌کند دریافت خواهید کرد.</p>
-<p>در حال حاضر تقریبا ۶۰.۰۰۰ مشترک ADSL مخابرات وجود دارند که تا کنون خریدی از فایبرنت نداشته‌اند.</p>
+<p>شما می توانید از طریق همکاری با ما و بدون هیچگونه سرمایه اولیه به یک درآمد ثابت ماهیانه دست یابید.</p>
+<p>کافیست:</p>
+<ul>
+<li>برای شماره تلفنی که اینترنت مخابرات داره ولی مشترک فایبرنت نیست خرید کنید.</li>
+<li>اولین خرید رو از طریق <a href="http://fibernet.ir/fast-charge" >وب‌سایت فایبرنت بخش شارژ سریع</a> و با شماره‌ی موبایل خودتون انجام بدید.</li>
+<li>شماره‌ی موبایل شما به‌عنوان «معرفِ » مشترکِ جدید ذخیره می‌شه.</li>
+<li>ازاین به بعد، برای هر خریدی که اون مشترک (شماره تلفن) از طریق اپلیکیشن فایبرنت انجام بده شما 6 درصد از مبلغ خرید رو به‌عنوان پورسانتِ  «معرفی» دریافت می‌کنید.</li>
+<li>برای این‌که مشترک خودش بتونه راحت‌تر خرید کنه، استفاده از اپ یا وبسایت رو بهش آموزش بدید.</li>
+</ul>
+<p>توجه: نیاز نیست خریدهای بعدی مشترک با شماره‌ی موبایل شما انجام بشه. شماره‌ی موبایل شما فقط برای اولین خرید لازم است.</p>
+<p>در حال حاضر تقریبا ۶۰.۰۰۰ مشترک ADSL مخابرات وجود دارند که تا کنون خریدی از فایبرنت نداشته‌اند و شما می توانید با هدایت این مشترکین به سمت فایبرنت کسب درآمد نمایید.</p>
+
 <p>در صورت تمایل به همکاری فرم زیر را تکمیل کنید.</p>
 <form id="affiliate" data-abide novalidate >
 <div data-abide-error class="row callout alert-callout-border alert" style="display: none;">
@@ -32,7 +40,7 @@ sitemap: true
         <label>نام
             <input name="firstName" type="text" aria-describedby="firstNameHint" aria-errormessage="firstNameError" required pattern="farsiAlpha" >
             <span class="form-error" id="firstNameError" >
-                نام را با صغحه کلید فارسی وارد کنید.
+                نام را با صفحه کلید فارسی وارد کنید.
             </span>
         </label>
     </div>
@@ -40,7 +48,7 @@ sitemap: true
         <label>نام خانوادگی
             <input name="lastName" type="text" aria-describedby="lastNameHint" aria-errormessage="lastNameError" required pattern="farsiAlpha" >
             <span class="form-error" id="lastNameError">
-                نام خانوادگی را با صغحه کلید فارسی وارد کنید.
+                نام خانوادگی را با صفحه کلید فارسی وارد کنید.
             </span>
         </label>
     </div>
@@ -48,7 +56,7 @@ sitemap: true
         <label>کدملی
             <input name="nationalCode" type="number" aria-describedby="nationalCodeHint" aria-errormessage="nationalCodeError" required pattern="tenDigits" >
             <span class="form-error" id="nationalCodeError">
-                کد ملی باید با صغحه کلید انگلیسی و ۱۰ رقم وارد شود.
+                کد ملی باید با صفحه کلید انگلیسی و ۱۰ رقم وارد شود.
             </span>
         </label>
     </div>
@@ -105,7 +113,7 @@ sitemap: true
         <label>شغل
             <input name="job" type="text" aria-describedby="jobHint" aria-errormessage="jobError" required pattern="farsiAlpha" >
             <span class="form-error" id="jobError" >
-                شغل را با صغحه کلید فارسی وارد کنید.
+                شغل را با صفحه کلید فارسی وارد کنید.
             </span>
         </label>
     </div>
