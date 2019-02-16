@@ -43,7 +43,7 @@ sitemap: false
         <label>نام
             <input name="firstName" type="text" aria-describedby="firstNameHint" aria-errormessage="firstNameError" required pattern="farsiAlpha" >
             <span class="form-error" id="firstNameError" >
-                نام را با حروف فارسی وارد کنید.
+                نام را با صفحه کلید فارسی وارد کنید.
             </span>
         </label>
         <p class="help-text">کاملا مطابق با اسناد هویتی و بدون کم و کاست</p>
@@ -52,7 +52,7 @@ sitemap: false
         <label>نام خانوادگی
             <input name="lastName" type="text" aria-describedby="lastNameHint" aria-errormessage="lastNameError" required pattern="farsiAlpha" >
             <span class="form-error" id="lastNameError">
-                نام خانوادگی را با حروف فارسی وارد کنید.
+                نام خانوادگی را با صفحه کلید فارسی وارد کنید.
             </span>
         </label>
         <p class="help-text">کاملا مطابق با اسناد هویتی و بدون کم و کاست</p>
@@ -71,7 +71,7 @@ sitemap: false
         <label>نام پدر
             <input name="fatherName" type="text" aria-describedby="fatherNameHint" aria-errormessage="fatherNameError" required pattern="farsiAlpha" >
             <span class="form-error" id="fatherNameError">
-                نام پدر را با حروف فارسی وارد کنید.
+                نام پدر را با صفحه کلید فارسی وارد کنید.
             </span>
         </label>
         <p class="help-text">کاملا مطابق با اسناد هویتی و بدون کم و کاست</p>
@@ -150,7 +150,7 @@ sitemap: false
         <label>نام مالک خط
             <input name="landlineOwner" type="text" aria-describedby="landlineOwnerHint" aria-errormessage="landlineOwnerError" required pattern="farsiAlphaMinFive" >
             <span class="form-error" id="landlineOwnerError">
-                نام و نام خانوادگی مالک خط را با حروف فارسی و حداقل در ۵ کاراکتر وارد کنید.
+                نام و نام خانوادگی مالک خط را با صفحه کلید فارسی و حداقل در ۵ کاراکتر وارد کنید.
             </span>
         </label>
     </div>
