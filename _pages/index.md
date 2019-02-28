@@ -11,12 +11,17 @@ date: 2017-03-22
             <p class="lead">اگر کاربر اینترنت مخابرات در استان <strong>مازندران</strong> و <strong>کرمانشاه</strong> هستید، می‌توانید با اپ فایبرنت حساب خود را شارژ کنید، حجم خریداری نمایید و از باقی‌مانده زمان و حجم سرویس باخبر شوید.</p>
             <div class="row">
                 <div class="small-12 medium-12 large-8 columns">
+                    <div class="row small-up-1">
+                        <div class="column column-block">
+                            <a class="button large expanded fast-charge" href="{{ "/fast-charge" | prepend: site.baseurl }}">شارژ سریع تحت وب</a>
+                        </div>
+                    </div>
                     <div class="row small-up-2 medium-up-2 large-up-2">
                         <div class="column column-block">
                             <a onclick="trackOutboundLink('https://play.google.com/store/apps/details?id=ir.fibernet.fiberman', 'google-play'); return false;" href="https://play.google.com/store/apps/details?id=ir.fibernet.fiberman"><img src="{{ "/assets/img/google-play.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
                         </div>
                         <div class="column column-block">
-                            <a onclick="trackOutboundLink('https://new.sibapp.com/applications/fibernet', 'sib-app'); return false;" href="https://new.sibapp.com/applications/fibernet" ><img src="{{ "/assets/img/sib-app.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
+                            <a href="#" ><img src="{{ "/assets/img/sib-app.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
                         </div>
                         <div class="column column-block">
                             <a onclick="trackOutboundLink('http://fibernet.ir/assets/apk/fibernet_v4.4.2_163.apk', 'direct-link'); return false;" href="{{ "/assets/apk/fibernet_v4.4.2_163.apk" | prepend: site.baseurl }}" ><img src="{{ "/assets/img/direct-link.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
@@ -27,7 +32,7 @@ date: 2017-03-22
                     </div>
                 </div>
             </div>
-            <small>همچنین با شماره گیری کد <code>#5050*788*</code> می‌توانید اینترنت خود را به آسانی شارژ کنید.</small>
+            <small>همچنین با شماره گیری کد <code>#5050*788*</code> و یا از طریق ربات تلگرام <a href="https://t.me/parsfibernetbot" ><code>@parsfibernetbot</code></a> می‌توانید اینترنت خود را به آسانی شارژ کنید.</small>
         </div>
         <div class="medium-3 medium-offset-1 end columns text-center">
             <img src="{{ "/assets/img/demo.png" | prepend: site.baseurl }}" alt="fibernet-app" />
@@ -39,12 +44,17 @@ date: 2017-03-22
             <p class="lead">اگر کاربر اینترنت مخابرات در استان <strong>مازندران</strong> و <strong>کرمانشاه</strong> هستید، می‌توانید با اپ فایبرنت حساب خود را شارژ کنید، حجم خریداری نمایید و از باقی‌مانده زمان و حجم سرویس باخبر شوید.</p>
             <div class="row">
                 <div class="small-12 medium-8 columns">
+                    <div class="row small-up-1">
+                        <div class="column column-block">
+                            <a class="button large expanded fast-charge" href="{{ "/fast-charge" | prepend: site.baseurl }}">شارژ سریع تحت وب</a>
+                        </div>
+                    </div>
                     <div class="row small-up-2">
                         <div class="column column-block">
                             <a onclick="trackOutboundLink('https://play.google.com/store/apps/details?id=ir.fibernet.fiberman', 'google-play'); return false;" href="https://play.google.com/store/apps/details?id=ir.fibernet.fiberman"><img src="{{ "/assets/img/google-play.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
                         </div>
                         <div class="column column-block">
-                            <a onclick="trackOutboundLink('https://new.sibapp.com/applications/fibernet', 'sib-app'); return false;" href="https://new.sibapp.com/applications/fibernet" ><img src="{{ "/assets/img/sib-app.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
+                            <a href="#" ><img src="{{ "/assets/img/sib-app.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
                         </div>
                         <div class="column column-block">
                             <a onclick="trackOutboundLink('http://fibernet.ir/assets/apk/fibernet_v4.4.2_163.apk', 'direct-link'); return false;" href="{{ "/assets/apk/fibernet_v4.4.2_163.apk" | prepend: site.baseurl }}" ><img src="{{ "/assets/img/direct-link.png" | prepend: site.baseurl }}" alt="fibernet-app" /></a>
@@ -55,7 +65,7 @@ date: 2017-03-22
                     </div>
                 </div>
             </div>
-            <small>همچنین با شماره گیری کد <code>#5050*788*</code> می‌توانید اینترنت خود را به آسانی شارژ کنید.</small>
+            <small>همچنین با شماره گیری کد <code>#5050*788*</code> و یا از طریق ربات تلگرام <a href="https://t.me/parsfibernetbot" ><code>@parsfibernetbot</code></a> می‌توانید اینترنت خود را به آسانی شارژ کنید.</small>
         </div>
         <div class="small-10 small-offset-1 end columns text-center">
             <img src="{{ "/assets/img/demo.png" | prepend: site.baseurl }}" alt="fibernet-app" style="margin-top: 3rem" />
