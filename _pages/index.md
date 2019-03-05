@@ -13,7 +13,7 @@ date: 2017-03-22
                 <div class="small-12 medium-12 large-8 columns">
                     <div class="row small-up-1">
                         <div class="column column-block">
-                            <a class="button large expanded fast-charge" href="{{ "/fast-charge" | prepend: site.baseurl }}">شارژ سریع تحت وب</a>
+                            <a class="button large expanded alert" href="{{ "/blog/support/" | prepend: site.baseurl }}">علت عدم سرویس دهی فایبرنت</a>
                         </div>
                     </div>
                     <div class="row small-up-2 medium-up-2 large-up-2">
@@ -46,7 +46,7 @@ date: 2017-03-22
                 <div class="small-12 medium-8 columns">
                     <div class="row small-up-1">
                         <div class="column column-block">
-                            <a class="button large expanded fast-charge" href="{{ "/fast-charge" | prepend: site.baseurl }}">شارژ سریع تحت وب</a>
+                            <a class="button large expanded alert" href="{{ "/blog/support/" | prepend: site.baseurl }}">علت عدم سرویس دهی فایبرنت</a>
                         </div>
                     </div>
                     <div class="row small-up-2">
